@@ -10,3 +10,6 @@ wheels/
 .venv
 
 config.yaml
+
+crypto_dca.log
+.DS_Store
