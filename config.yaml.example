@@ -1,0 +1,20 @@
+# config.yaml.example - Copy this file to config.yaml and update with your values
+
+trading_portfolio:  # Current exchange balances (use coingecko IDs)
+  bitcoin: 0.0     # Amount in BTC
+  ethereum: 0.0    # Amount in ETH
+  solana: 0.0      # Amount in SOL
+
+long_term_portfolio:  # Cold storage/hardware wallet balances
+  bitcoin: 0.0
+  ethereum: 0.0
+  solana: 0.0
+
+allocations:  # Target allocation percentages (must sum to 1.0)
+  bitcoin: 0.50    # 50%
+  ethereum: 0.20   # 20%
+  solana: 0.125    # 12.5%
+
+settings:
+  daily_budget: 100    # Maximum daily investment in USD
+  min_trade_size: 20   # Minimum trade size in USD

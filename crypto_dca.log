@@ -1,0 +1,1584 @@
+2024-11-16 06:50:49,908 - INFO - Initialized DCA Trader with $100 daily budget
+2024-11-16 06:50:49,908 - INFO - Target allocations: {
+  "bitcoin": 0.5,
+  "ethereum": 0.2,
+  "solana": 0.125,
+  "sui": 0.075,
+  "arbitrum": 0.05,
+  "chainlink": 0.025,
+  "sei-network": 0.025
+}
+2024-11-16 06:50:49,908 - INFO - Fetching current prices from CoinGecko...
+2024-11-16 06:50:50,340 - INFO - Current prices fetched successfully:
+2024-11-16 06:50:50,340 - INFO - arbitrum: $0.63
+2024-11-16 06:50:50,340 - INFO - bitcoin: $91,505.00
+2024-11-16 06:50:50,340 - INFO - chainlink: $14.18
+2024-11-16 06:50:50,340 - INFO - ethereum: $3,133.28
+2024-11-16 06:50:50,340 - INFO - sei-network: $0.52
+2024-11-16 06:50:50,340 - INFO - solana: $221.07
+2024-11-16 06:50:50,340 - INFO - sui: $3.77
+2024-11-16 06:50:50,340 - INFO - 
+==================================================
+2024-11-16 06:50:50,340 - INFO - Starting new trade analysis...
+2024-11-16 06:50:50,340 - INFO - Using cached prices
+2024-11-16 06:50:50,341 - INFO - Fetching 7-day price history...
+2024-11-16 06:50:50,341 - INFO - Fetching history for bitcoin...
+2024-11-16 06:50:50,456 - INFO - Fetched 169 data points for bitcoin
+2024-11-16 06:50:50,457 - INFO - Fetching history for ethereum...
+2024-11-16 06:50:50,846 - INFO - Fetched 169 data points for ethereum
+2024-11-16 06:50:50,847 - INFO - Fetching history for solana...
+2024-11-16 06:50:50,964 - INFO - Fetched 169 data points for solana
+2024-11-16 06:50:50,964 - INFO - Fetching history for sui...
+2024-11-16 06:50:51,388 - INFO - Fetched 169 data points for sui
+2024-11-16 06:50:51,388 - INFO - Fetching history for arbitrum...
+2024-11-16 06:50:51,850 - INFO - Fetched 169 data points for arbitrum
+2024-11-16 06:50:51,851 - INFO - Fetching history for chainlink...
+2024-11-16 06:50:52,045 - INFO - Fetched 169 data points for chainlink
+2024-11-16 06:50:52,045 - INFO - Fetching history for sei-network...
+2024-11-16 06:50:52,261 - INFO - Fetched 169 data points for sei-network
+2024-11-16 06:50:52,261 - INFO - Successfully fetched all price histories
+2024-11-16 06:50:52,261 - INFO - Fetching BTC dominance...
+2024-11-16 06:50:52,457 - INFO - Current BTC dominance: 57.0%
+2024-11-16 06:50:52,457 - INFO - High BTC dominance: Market favors Bitcoin
+2024-11-16 06:50:52,457 - INFO - Using cached prices
+2024-11-16 06:50:52,458 - INFO - 
+Analyzing bitcoin:
+2024-11-16 06:50:52,458 - INFO -   Current price: $91,505.00
+2024-11-16 06:50:52,458 - INFO -   24h change: 3.7%
+2024-11-16 06:50:52,458 - INFO -   7d change: 19.1%
+2024-11-16 06:50:52,458 - INFO -   Current allocation: 60.7% (Target: 50.0%)
+2024-11-16 06:50:52,458 - INFO -   Allocation difference: -10.7%
+2024-11-16 06:50:52,458 - INFO -   Score: 35.9
+2024-11-16 06:50:52,458 - INFO - 
+Analyzing ethereum:
+2024-11-16 06:50:52,458 - INFO -   Current price: $3,133.28
+2024-11-16 06:50:52,458 - INFO -   24h change: 2.1%
+2024-11-16 06:50:52,458 - INFO -   7d change: 2.5%
+2024-11-16 06:50:52,458 - INFO -   Current allocation: 27.1% (Target: 20.0%)
+2024-11-16 06:50:52,458 - INFO -   Allocation difference: -7.1%
+2024-11-16 06:50:52,458 - INFO -   Score: 16.5
+2024-11-16 06:50:52,458 - INFO - 
+Analyzing solana:
+2024-11-16 06:50:52,459 - INFO -   Current price: $221.07
+2024-11-16 06:50:52,459 - INFO -   24h change: 5.1%
+2024-11-16 06:50:52,459 - INFO -   7d change: 9.4%
+2024-11-16 06:50:52,459 - INFO -   Current allocation: 7.6% (Target: 12.5%)
+2024-11-16 06:50:52,459 - INFO -   Allocation difference: 4.9%
+2024-11-16 06:50:52,459 - INFO -   Score: -1.8
+2024-11-16 06:50:52,459 - INFO - 
+Analyzing sui:
+2024-11-16 06:50:52,459 - INFO -   Current price: $3.77
+2024-11-16 06:50:52,459 - INFO -   24h change: 15.5%
+2024-11-16 06:50:52,459 - INFO -   7d change: 65.0%
+2024-11-16 06:50:52,459 - INFO -   Current allocation: 3.3% (Target: 7.5%)
+2024-11-16 06:50:52,459 - INFO -   Allocation difference: 4.2%
+2024-11-16 06:50:52,459 - INFO -   Score: 41.8
+2024-11-16 06:50:52,459 - INFO - 
+Analyzing arbitrum:
+2024-11-16 06:50:52,459 - INFO -   Current price: $0.63
+2024-11-16 06:50:52,459 - INFO -   24h change: 7.0%
+2024-11-16 06:50:52,459 - INFO -   7d change: 2.0%
+2024-11-16 06:50:52,459 - INFO -   Current allocation: 0.3% (Target: 5.0%)
+2024-11-16 06:50:52,460 - INFO -   Allocation difference: 4.7%
+2024-11-16 06:50:52,460 - INFO -   Score: -5.9
+2024-11-16 06:50:52,461 - INFO - 
+Analyzing chainlink:
+2024-11-16 06:50:52,461 - INFO -   Current price: $14.18
+2024-11-16 06:50:52,461 - INFO -   24h change: 7.9%
+2024-11-16 06:50:52,461 - INFO -   7d change: 5.8%
+2024-11-16 06:50:52,461 - INFO -   Current allocation: 1.0% (Target: 2.5%)
+2024-11-16 06:50:52,461 - INFO -   Allocation difference: 1.5%
+2024-11-16 06:50:52,461 - INFO -   Score: 3.4
+2024-11-16 06:50:52,461 - INFO - 
+Analyzing sei-network:
+2024-11-16 06:50:52,461 - INFO -   Current price: $0.52
+2024-11-16 06:50:52,461 - INFO -   24h change: 19.4%
+2024-11-16 06:50:52,461 - INFO -   7d change: 22.6%
+2024-11-16 06:50:52,461 - INFO -   Current allocation: 0.1% (Target: 2.5%)
+2024-11-16 06:50:52,461 - INFO -   Allocation difference: 2.4%
+2024-11-16 06:50:52,461 - INFO -   Score: 16.8
+2024-11-16 06:50:52,461 - INFO - 
+Portfolio Analysis:
+2024-11-16 06:50:52,461 - INFO - Total Portfolio Value: $34,376.76
+2024-11-16 06:50:52,461 - INFO - 
+Holdings Breakdown:
+2024-11-16 06:50:52,461 - INFO - 
+BITCOIN:
+2024-11-16 06:50:52,461 - INFO -   Amount: 0.2282 tokens
+2024-11-16 06:50:52,461 - INFO -   Price: $91,505.0000
+2024-11-16 06:50:52,461 - INFO -   Value: $20,877.60
+2024-11-16 06:50:52,461 - INFO -   Portfolio %: [31m60.73% (target: 50.00%)[0m
+2024-11-16 06:50:52,461 - INFO - 
+ETHEREUM:
+2024-11-16 06:50:52,462 - INFO -   Amount: 2.9683 tokens
+2024-11-16 06:50:52,462 - INFO -   Price: $3,133.2800
+2024-11-16 06:50:52,462 - INFO -   Value: $9,300.55
+2024-11-16 06:50:52,462 - INFO -   Portfolio %: [31m27.05% (target: 20.00%)[0m
+2024-11-16 06:50:52,462 - INFO - 
+SOLANA:
+2024-11-16 06:50:52,462 - INFO -   Amount: 11.7445 tokens
+2024-11-16 06:50:52,462 - INFO -   Price: $221.0700
+2024-11-16 06:50:52,462 - INFO -   Value: $2,596.36
+2024-11-16 06:50:52,462 - INFO -   Portfolio %: [32m7.55% (target: 12.50%)[0m
+2024-11-16 06:50:52,462 - INFO - 
+SUI:
+2024-11-16 06:50:52,462 - INFO -   Amount: 301.3600 tokens
+2024-11-16 06:50:52,462 - INFO -   Price: $3.7700
+2024-11-16 06:50:52,462 - INFO -   Value: $1,136.13
+2024-11-16 06:50:52,462 - INFO -   Portfolio %: [32m3.30% (target: 7.50%)[0m
+2024-11-16 06:50:52,462 - INFO - 
+CHAINLINK:
+2024-11-16 06:50:52,462 - INFO -   Amount: 24.0300 tokens
+2024-11-16 06:50:52,462 - INFO -   Price: $14.1800
+2024-11-16 06:50:52,462 - INFO -   Value: $340.75
+2024-11-16 06:50:52,462 - INFO -   Portfolio %: [32m0.99% (target: 2.50%)[0m
+2024-11-16 06:50:52,462 - INFO - 
+ARBITRUM:
+2024-11-16 06:50:52,462 - INFO -   Amount: 163.9800 tokens
+2024-11-16 06:50:52,462 - INFO -   Price: $0.6256
+2024-11-16 06:50:52,462 - INFO -   Value: $102.59
+2024-11-16 06:50:52,462 - INFO -   Portfolio %: [32m0.30% (target: 5.00%)[0m
+2024-11-16 06:50:52,462 - INFO - 
+SEI-NETWORK:
+2024-11-16 06:50:52,463 - INFO -   Amount: 43.6400 tokens
+2024-11-16 06:50:52,463 - INFO -   Price: $0.5224
+2024-11-16 06:50:52,463 - INFO -   Value: $22.80
+2024-11-16 06:50:52,463 - INFO -   Portfolio %: [32m0.07% (target: 2.50%)[0m
+2024-11-16 06:50:52,463 - INFO - 
+Final Recommendation:
+2024-11-16 06:50:52,463 - INFO - Buy ARBITRUM
+2024-11-16 06:50:52,463 - INFO - Amount: $100.00
+2024-11-16 06:50:52,463 - INFO - Current price: $0.6256
+2024-11-16 06:50:52,463 - INFO - Reasoning:
+2024-11-16 06:50:52,463 - INFO -   - 24h change: 7.0%
+2024-11-16 06:50:52,463 - INFO -   - 7d change: 2.0%
+2024-11-16 06:50:52,463 - INFO -   - Weighted change: 3.5%
+2024-11-16 06:50:52,463 - INFO -   - Allocation diff: 4.7%
+2024-11-16 06:50:52,463 - INFO -   - BTC dominance: 57.0%
+2024-11-16 06:50:52,463 - INFO - 
+=== CURRENT PORTFOLIO SUMMARY ===
+2024-11-16 06:50:52,463 - INFO - Total Portfolio Value: $34,376.76
+2024-11-16 06:50:52,463 - INFO - 
+Holdings Breakdown:
+2024-11-16 06:50:52,463 - INFO - BITCOIN:
+2024-11-16 06:50:52,463 - INFO -   Amount: 0.2282 tokens
+2024-11-16 06:50:52,463 - INFO -   Price per token: $91,505.0000
+2024-11-16 06:50:52,463 - INFO -   Total Value: $20,877.60
+2024-11-16 06:50:52,463 - INFO -   Portfolio %: [31m60.73% (target: 50.00%)[0m
+2024-11-16 06:50:52,464 - INFO - ETHEREUM:
+2024-11-16 06:50:52,464 - INFO -   Amount: 2.9683 tokens
+2024-11-16 06:50:52,464 - INFO -   Price per token: $3,133.2800
+2024-11-16 06:50:52,464 - INFO -   Total Value: $9,300.55
+2024-11-16 06:50:52,464 - INFO -   Portfolio %: [31m27.05% (target: 20.00%)[0m
+2024-11-16 06:50:52,464 - INFO - SOLANA:
+2024-11-16 06:50:52,464 - INFO -   Amount: 11.7445 tokens
+2024-11-16 06:50:52,464 - INFO -   Price per token: $221.0700
+2024-11-16 06:50:52,464 - INFO -   Total Value: $2,596.36
+2024-11-16 06:50:52,464 - INFO -   Portfolio %: [32m7.55% (target: 12.50%)[0m
+2024-11-16 06:50:52,464 - INFO - SUI:
+2024-11-16 06:50:52,464 - INFO -   Amount: 301.3600 tokens
+2024-11-16 06:50:52,464 - INFO -   Price per token: $3.7700
+2024-11-16 06:50:52,464 - INFO -   Total Value: $1,136.13
+2024-11-16 06:50:52,464 - INFO -   Portfolio %: [32m3.30% (target: 7.50%)[0m
+2024-11-16 06:50:52,464 - INFO - CHAINLINK:
+2024-11-16 06:50:52,464 - INFO -   Amount: 24.0300 tokens
+2024-11-16 06:50:52,464 - INFO -   Price per token: $14.1800
+2024-11-16 06:50:52,464 - INFO -   Total Value: $340.75
+2024-11-16 06:50:52,464 - INFO -   Portfolio %: [32m0.99% (target: 2.50%)[0m
+2024-11-16 06:50:52,464 - INFO - ARBITRUM:
+2024-11-16 06:50:52,464 - INFO -   Amount: 163.9800 tokens
+2024-11-16 06:50:52,464 - INFO -   Price per token: $0.6256
+2024-11-16 06:50:52,464 - INFO -   Total Value: $102.59
+2024-11-16 06:50:52,464 - INFO -   Portfolio %: [32m0.30% (target: 5.00%)[0m
+2024-11-16 06:50:52,464 - INFO - SEI-NETWORK:
+2024-11-16 06:50:52,464 - INFO -   Amount: 43.6400 tokens
+2024-11-16 06:50:52,464 - INFO -   Price per token: $0.5224
+2024-11-16 06:50:52,464 - INFO -   Total Value: $22.80
+2024-11-16 06:50:52,464 - INFO -   Portfolio %: [32m0.07% (target: 2.50%)[0m
+2024-11-16 06:50:52,464 - INFO - 
+=== TRADE RECOMMENDATION ===
+2024-11-16 06:50:52,465 - INFO - Buy arbitrum
+2024-11-16 06:50:52,465 - INFO - Amount: $100.00
+2024-11-16 06:50:52,465 - INFO - Current price: $0.6256
+2024-11-16 06:50:52,465 - INFO - 24h change: 7.0%
+2024-11-16 06:50:52,465 - INFO - 7d change: 2.0%
+2024-11-16 12:09:58,408 - INFO - Initialized DCA Trader with $100 daily budget
+2024-11-16 12:09:58,408 - INFO - Target allocations: {
+  "bitcoin": 0.5,
+  "ethereum": 0.2,
+  "solana": 0.125,
+  "sui": 0.075,
+  "arbitrum": 0.05,
+  "chainlink": 0.025,
+  "sei-network": 0.025
+}
+2024-11-16 12:09:58,408 - INFO - Fetching current prices from CoinGecko...
+2024-11-16 12:09:58,687 - INFO - Current prices fetched successfully:
+2024-11-16 12:09:58,687 - INFO - arbitrum: $0.64
+2024-11-16 12:09:58,688 - INFO - bitcoin: $91,337.00
+2024-11-16 12:09:58,688 - INFO - chainlink: $14.14
+2024-11-16 12:09:58,688 - INFO - ethereum: $3,126.82
+2024-11-16 12:09:58,688 - INFO - sei-network: $0.54
+2024-11-16 12:09:58,688 - INFO - solana: $218.30
+2024-11-16 12:09:58,688 - INFO - sui: $3.82
+2024-11-16 12:09:58,689 - INFO - 
+==================================================
+2024-11-16 12:09:58,689 - INFO - Starting new trade analysis...
+2024-11-16 12:09:58,689 - INFO - Using cached prices
+2024-11-16 12:09:58,689 - INFO - Fetching 7-day price history...
+2024-11-16 12:09:58,689 - INFO - Fetching history for bitcoin...
+2024-11-16 12:09:58,948 - INFO - Fetched 169 data points for bitcoin
+2024-11-16 12:09:58,948 - INFO - Fetching history for ethereum...
+2024-11-16 12:09:59,184 - INFO - Fetched 169 data points for ethereum
+2024-11-16 12:09:59,184 - INFO - Fetching history for solana...
+2024-11-16 12:09:59,417 - INFO - Fetched 169 data points for solana
+2024-11-16 12:09:59,418 - INFO - Fetching history for sui...
+2024-11-16 12:09:59,645 - INFO - Fetched 169 data points for sui
+2024-11-16 12:09:59,645 - INFO - Fetching history for arbitrum...
+2024-11-16 12:09:59,871 - INFO - Fetched 169 data points for arbitrum
+2024-11-16 12:09:59,871 - INFO - Fetching history for chainlink...
+2024-11-16 12:10:00,307 - INFO - Fetched 168 data points for chainlink
+2024-11-16 12:10:00,307 - INFO - Fetching history for sei-network...
+2024-11-16 12:10:00,560 - INFO - Fetched 169 data points for sei-network
+2024-11-16 12:10:00,560 - INFO - Successfully fetched all price histories
+2024-11-16 12:10:00,560 - INFO - Fetching BTC dominance...
+2024-11-16 12:10:00,788 - INFO - Current BTC dominance: 56.9%
+2024-11-16 12:10:00,788 - INFO - High BTC dominance: Market favors Bitcoin
+2024-11-16 12:10:00,788 - INFO - Using cached prices
+2024-11-16 12:10:00,790 - INFO - 
+Analyzing bitcoin:
+2024-11-16 12:10:00,790 - INFO -   Current price: $91,337.00
+2024-11-16 12:10:00,790 - INFO -   24h change: 1.9%
+2024-11-16 12:10:00,790 - INFO -   7d change: 19.7%
+2024-11-16 12:10:00,790 - INFO -   Current allocation: 60.7% (Target: 50.0%)
+2024-11-16 12:10:00,790 - INFO -   Allocation difference: -10.7%
+2024-11-16 12:10:00,790 - INFO -   Score: 35.7
+2024-11-16 12:10:00,791 - INFO - 
+Analyzing ethereum:
+2024-11-16 12:10:00,791 - INFO -   Current price: $3,126.82
+2024-11-16 12:10:00,791 - INFO -   24h change: 0.6%
+2024-11-16 12:10:00,791 - INFO -   7d change: 2.4%
+2024-11-16 12:10:00,791 - INFO -   Current allocation: 27.0% (Target: 20.0%)
+2024-11-16 12:10:00,791 - INFO -   Allocation difference: -7.0%
+2024-11-16 12:10:00,791 - INFO -   Score: 15.9
+2024-11-16 12:10:00,791 - INFO - 
+Analyzing solana:
+2024-11-16 12:10:00,791 - INFO -   Current price: $218.30
+2024-11-16 12:10:00,791 - INFO -   24h change: 2.2%
+2024-11-16 12:10:00,791 - INFO -   7d change: 7.9%
+2024-11-16 12:10:00,792 - INFO -   Current allocation: 7.5% (Target: 12.5%)
+2024-11-16 12:10:00,792 - INFO -   Allocation difference: 5.0%
+2024-11-16 12:10:00,792 - INFO -   Score: -3.9
+2024-11-16 12:10:00,792 - INFO - 
+Analyzing sui:
+2024-11-16 12:10:00,792 - INFO -   Current price: $3.82
+2024-11-16 12:10:00,792 - INFO -   24h change: 13.6%
+2024-11-16 12:10:00,792 - INFO -   7d change: 66.0%
+2024-11-16 12:10:00,792 - INFO -   Current allocation: 3.4% (Target: 7.5%)
+2024-11-16 12:10:00,792 - INFO -   Allocation difference: 4.1%
+2024-11-16 12:10:00,792 - INFO -   Score: 42.0
+2024-11-16 12:10:00,793 - INFO - 
+Analyzing arbitrum:
+2024-11-16 12:10:00,793 - INFO -   Current price: $0.64
+2024-11-16 12:10:00,793 - INFO -   24h change: 6.4%
+2024-11-16 12:10:00,793 - INFO -   7d change: 3.7%
+2024-11-16 12:10:00,793 - INFO -   Current allocation: 0.5% (Target: 5.0%)
+2024-11-16 12:10:00,795 - INFO -   Allocation difference: 4.5%
+2024-11-16 12:10:00,795 - INFO -   Score: -4.6
+2024-11-16 12:10:00,795 - INFO - 
+Analyzing chainlink:
+2024-11-16 12:10:00,795 - INFO -   Current price: $14.14
+2024-11-16 12:10:00,795 - INFO -   24h change: 4.7%
+2024-11-16 12:10:00,795 - INFO -   7d change: 3.9%
+2024-11-16 12:10:00,796 - INFO -   Current allocation: 1.0% (Target: 2.5%)
+2024-11-16 12:10:00,796 - INFO -   Allocation difference: 1.5%
+2024-11-16 12:10:00,796 - INFO -   Score: 1.1
+2024-11-16 12:10:00,796 - INFO - 
+Analyzing sei-network:
+2024-11-16 12:10:00,796 - INFO -   Current price: $0.54
+2024-11-16 12:10:00,796 - INFO -   24h change: 17.9%
+2024-11-16 12:10:00,796 - INFO -   7d change: 25.8%
+2024-11-16 12:10:00,796 - INFO -   Current allocation: 0.1% (Target: 2.5%)
+2024-11-16 12:10:00,796 - INFO -   Allocation difference: 2.4%
+2024-11-16 12:10:00,796 - INFO -   Score: 18.5
+2024-11-16 12:10:00,796 - INFO - 
+Portfolio Analysis:
+2024-11-16 12:10:00,796 - INFO - Total Portfolio Value: $34,353.55
+2024-11-16 12:10:00,796 - INFO - 
+Holdings Breakdown:
+2024-11-16 12:10:00,797 - INFO - 
+BITCOIN:
+2024-11-16 12:10:00,797 - INFO -   Amount: 0.2282 tokens
+2024-11-16 12:10:00,797 - INFO -   Price: $91,337.0000
+2024-11-16 12:10:00,797 - INFO -   Value: $20,839.27
+2024-11-16 12:10:00,797 - INFO -   Portfolio %: [31m60.66% (target: 50.00%)[0m
+2024-11-16 12:10:00,797 - INFO - 
+ETHEREUM:
+2024-11-16 12:10:00,797 - INFO -   Amount: 2.9683 tokens
+2024-11-16 12:10:00,797 - INFO -   Price: $3,126.8200
+2024-11-16 12:10:00,797 - INFO -   Value: $9,281.37
+2024-11-16 12:10:00,797 - INFO -   Portfolio %: [31m27.02% (target: 20.00%)[0m
+2024-11-16 12:10:00,797 - INFO - 
+SOLANA:
+2024-11-16 12:10:00,797 - INFO -   Amount: 11.7445 tokens
+2024-11-16 12:10:00,797 - INFO -   Price: $218.3000
+2024-11-16 12:10:00,797 - INFO -   Value: $2,563.82
+2024-11-16 12:10:00,797 - INFO -   Portfolio %: [32m7.46% (target: 12.50%)[0m
+2024-11-16 12:10:00,798 - INFO - 
+SUI:
+2024-11-16 12:10:00,798 - INFO -   Amount: 301.3600 tokens
+2024-11-16 12:10:00,798 - INFO -   Price: $3.8200
+2024-11-16 12:10:00,798 - INFO -   Value: $1,151.20
+2024-11-16 12:10:00,798 - INFO -   Portfolio %: [32m3.35% (target: 7.50%)[0m
+2024-11-16 12:10:00,798 - INFO - 
+CHAINLINK:
+2024-11-16 12:10:00,798 - INFO -   Amount: 24.0300 tokens
+2024-11-16 12:10:00,798 - INFO -   Price: $14.1400
+2024-11-16 12:10:00,798 - INFO -   Value: $339.78
+2024-11-16 12:10:00,798 - INFO -   Portfolio %: [32m0.99% (target: 2.50%)[0m
+2024-11-16 12:10:00,798 - INFO - 
+ARBITRUM:
+2024-11-16 12:10:00,798 - INFO -   Amount: 243.5500 tokens
+2024-11-16 12:10:00,798 - INFO -   Price: $0.6353
+2024-11-16 12:10:00,798 - INFO -   Value: $154.73
+2024-11-16 12:10:00,798 - INFO -   Portfolio %: [32m0.45% (target: 5.00%)[0m
+2024-11-16 12:10:00,798 - INFO - 
+SEI-NETWORK:
+2024-11-16 12:10:00,798 - INFO -   Amount: 43.6400 tokens
+2024-11-16 12:10:00,799 - INFO -   Price: $0.5357
+2024-11-16 12:10:00,799 - INFO -   Value: $23.38
+2024-11-16 12:10:00,799 - INFO -   Portfolio %: [32m0.07% (target: 2.50%)[0m
+2024-11-16 12:10:00,799 - INFO - 
+Final Recommendation:
+2024-11-16 12:10:00,799 - INFO - Buy ARBITRUM
+2024-11-16 12:10:00,799 - INFO - Amount: $100.00
+2024-11-16 12:10:00,799 - INFO - Current price: $0.6353
+2024-11-16 12:10:00,799 - INFO - Reasoning:
+2024-11-16 12:10:00,799 - INFO -   - 24h change: 6.4%
+2024-11-16 12:10:00,799 - INFO -   - 7d change: 3.7%
+2024-11-16 12:10:00,799 - INFO -   - Weighted change: 4.5%
+2024-11-16 12:10:00,799 - INFO -   - Allocation diff: 4.5%
+2024-11-16 12:10:00,799 - INFO -   - BTC dominance: 56.9%
+2024-11-16 12:10:00,799 - INFO - 
+=== CURRENT PORTFOLIO SUMMARY ===
+2024-11-16 12:10:00,799 - INFO - Total Portfolio Value: $34,353.55
+2024-11-16 12:10:00,800 - INFO - 
+Holdings Breakdown:
+2024-11-16 12:10:00,800 - INFO - BITCOIN:
+2024-11-16 12:10:00,800 - INFO -   Amount: 0.2282 tokens
+2024-11-16 12:10:00,800 - INFO -   Price per token: $91,337.0000
+2024-11-16 12:10:00,800 - INFO -   Total Value: $20,839.27
+2024-11-16 12:10:00,800 - INFO -   Portfolio %: [31m60.66% (target: 50.00%)[0m
+2024-11-16 12:10:00,800 - INFO - ETHEREUM:
+2024-11-16 12:10:00,800 - INFO -   Amount: 2.9683 tokens
+2024-11-16 12:10:00,800 - INFO -   Price per token: $3,126.8200
+2024-11-16 12:10:00,800 - INFO -   Total Value: $9,281.37
+2024-11-16 12:10:00,800 - INFO -   Portfolio %: [31m27.02% (target: 20.00%)[0m
+2024-11-16 12:10:00,800 - INFO - SOLANA:
+2024-11-16 12:10:00,800 - INFO -   Amount: 11.7445 tokens
+2024-11-16 12:10:00,800 - INFO -   Price per token: $218.3000
+2024-11-16 12:10:00,800 - INFO -   Total Value: $2,563.82
+2024-11-16 12:10:00,801 - INFO -   Portfolio %: [32m7.46% (target: 12.50%)[0m
+2024-11-16 12:10:00,801 - INFO - SUI:
+2024-11-16 12:10:00,801 - INFO -   Amount: 301.3600 tokens
+2024-11-16 12:10:00,801 - INFO -   Price per token: $3.8200
+2024-11-16 12:10:00,801 - INFO -   Total Value: $1,151.20
+2024-11-16 12:10:00,801 - INFO -   Portfolio %: [32m3.35% (target: 7.50%)[0m
+2024-11-16 12:10:00,801 - INFO - CHAINLINK:
+2024-11-16 12:10:00,801 - INFO -   Amount: 24.0300 tokens
+2024-11-16 12:10:00,801 - INFO -   Price per token: $14.1400
+2024-11-16 12:10:00,801 - INFO -   Total Value: $339.78
+2024-11-16 12:10:00,801 - INFO -   Portfolio %: [32m0.99% (target: 2.50%)[0m
+2024-11-16 12:10:00,801 - INFO - ARBITRUM:
+2024-11-16 12:10:00,801 - INFO -   Amount: 243.5500 tokens
+2024-11-16 12:10:00,801 - INFO -   Price per token: $0.6353
+2024-11-16 12:10:00,801 - INFO -   Total Value: $154.73
+2024-11-16 12:10:00,802 - INFO -   Portfolio %: [32m0.45% (target: 5.00%)[0m
+2024-11-16 12:10:00,802 - INFO - SEI-NETWORK:
+2024-11-16 12:10:00,802 - INFO -   Amount: 43.6400 tokens
+2024-11-16 12:10:00,802 - INFO -   Price per token: $0.5357
+2024-11-16 12:10:00,802 - INFO -   Total Value: $23.38
+2024-11-16 12:10:00,802 - INFO -   Portfolio %: [32m0.07% (target: 2.50%)[0m
+2024-11-16 12:10:00,802 - INFO - 
+=== TRADE RECOMMENDATION ===
+2024-11-16 12:10:00,802 - INFO - Buy arbitrum
+2024-11-16 12:10:00,802 - INFO - Amount: $100.00
+2024-11-16 12:10:00,802 - INFO - Current price: $0.6353
+2024-11-16 12:10:00,802 - INFO - 24h change: 6.4%
+2024-11-16 12:10:00,802 - INFO - 7d change: 3.7%
+2024-11-16 19:16:37,084 - INFO - Initialized DCA Trader with $100 daily budget
+2024-11-16 19:16:37,085 - INFO - Target allocations: {
+  "bitcoin": 0.5,
+  "ethereum": 0.2,
+  "solana": 0.125,
+  "sui": 0.075,
+  "arbitrum": 0.05,
+  "chainlink": 0.025,
+  "sei-network": 0.025
+}
+2024-11-16 19:16:37,085 - INFO - Fetching current prices from CoinGecko...
+2024-11-16 19:16:37,332 - INFO - Current prices fetched successfully:
+2024-11-16 19:16:37,332 - INFO - arbitrum: $0.69
+2024-11-16 19:16:37,332 - INFO - bitcoin: $91,167.00
+2024-11-16 19:16:37,333 - INFO - chainlink: $14.50
+2024-11-16 19:16:37,333 - INFO - ethereum: $3,173.07
+2024-11-16 19:16:37,333 - INFO - sei-network: $0.54
+2024-11-16 19:16:37,333 - INFO - solana: $216.09
+2024-11-16 19:16:37,333 - INFO - sui: $3.69
+2024-11-16 19:16:37,334 - INFO - 
+==================================================
+2024-11-16 19:16:37,334 - INFO - Starting new trade analysis...
+2024-11-16 19:16:37,334 - INFO - Using cached prices
+2024-11-16 19:16:37,334 - INFO - Fetching 7-day price history...
+2024-11-16 19:16:37,334 - INFO - Fetching history for bitcoin...
+2024-11-16 19:16:37,559 - INFO - Fetched 169 data points for bitcoin
+2024-11-16 19:16:37,559 - INFO - Fetching history for ethereum...
+2024-11-16 19:16:37,781 - INFO - Fetched 170 data points for ethereum
+2024-11-16 19:16:37,781 - INFO - Fetching history for solana...
+2024-11-16 19:16:38,219 - INFO - Fetched 169 data points for solana
+2024-11-16 19:16:38,220 - INFO - Fetching history for sui...
+2024-11-16 19:16:38,677 - INFO - Fetched 170 data points for sui
+2024-11-16 19:16:38,677 - INFO - Fetching history for arbitrum...
+2024-11-16 19:16:38,922 - INFO - Fetched 169 data points for arbitrum
+2024-11-16 19:16:38,922 - INFO - Fetching history for chainlink...
+2024-11-16 19:16:39,002 - WARNING - Rate limited. Waiting 1 seconds...
+2024-11-16 19:16:40,077 - WARNING - Rate limited. Waiting 2 seconds...
+2024-11-16 19:16:42,148 - WARNING - Rate limited. Waiting 4 seconds...
+2024-11-16 19:16:46,223 - WARNING - Rate limited. Waiting 8 seconds...
+2024-11-16 19:16:54,635 - INFO - Fetched 169 data points for chainlink
+2024-11-16 19:16:54,636 - INFO - Fetching history for sei-network...
+2024-11-16 19:16:54,959 - WARNING - Rate limited. Waiting 1 seconds...
+2024-11-16 19:16:56,351 - INFO - Fetched 169 data points for sei-network
+2024-11-16 19:16:56,353 - INFO - Successfully fetched all price histories
+2024-11-16 19:16:56,355 - INFO - Fetching BTC dominance...
+2024-11-16 19:16:56,690 - ERROR - Error fetching BTC dominance: 429 Client Error: Too Many Requests for url: https://api.coingecko.com/api/v3/global
+2024-11-16 19:16:56,691 - INFO - Using default BTC dominance of 45%
+2024-11-16 19:16:56,691 - INFO - Using cached prices
+2024-11-16 19:16:56,691 - INFO - 
+Analyzing bitcoin:
+2024-11-16 19:16:56,692 - INFO -   Current price: $91,167.00
+2024-11-16 19:16:56,692 - INFO -   24h change: 0.5%
+2024-11-16 19:16:56,692 - INFO -   7d change: 19.2%
+2024-11-16 19:16:56,692 - INFO -   Current allocation: 60.5% (Target: 50.0%)
+2024-11-16 19:16:56,692 - INFO -   Allocation difference: -10.5%
+2024-11-16 19:16:56,692 - INFO -   Score: 34.5
+2024-11-16 19:16:56,692 - INFO - 
+Analyzing ethereum:
+2024-11-16 19:16:56,692 - INFO -   Current price: $3,173.07
+2024-11-16 19:16:56,692 - INFO -   24h change: 4.1%
+2024-11-16 19:16:56,692 - INFO -   7d change: 4.4%
+2024-11-16 19:16:56,692 - INFO -   Current allocation: 27.4% (Target: 20.0%)
+2024-11-16 19:16:56,692 - INFO -   Allocation difference: -7.4%
+2024-11-16 19:16:56,692 - INFO -   Score: 19.1
+2024-11-16 19:16:56,692 - INFO - 
+Analyzing solana:
+2024-11-16 19:16:56,692 - INFO -   Current price: $216.09
+2024-11-16 19:16:56,692 - INFO -   24h change: 2.5%
+2024-11-16 19:16:56,692 - INFO -   7d change: 8.9%
+2024-11-16 19:16:56,693 - INFO -   Current allocation: 7.4% (Target: 12.5%)
+2024-11-16 19:16:56,693 - INFO -   Allocation difference: 5.1%
+2024-11-16 19:16:56,693 - INFO -   Score: -3.3
+2024-11-16 19:16:56,693 - INFO - 
+Analyzing sui:
+2024-11-16 19:16:56,693 - INFO -   Current price: $3.69
+2024-11-16 19:16:56,693 - INFO -   24h change: 9.4%
+2024-11-16 19:16:56,693 - INFO -   7d change: 54.5%
+2024-11-16 19:16:56,693 - INFO -   Current allocation: 3.2% (Target: 7.5%)
+2024-11-16 19:16:56,693 - INFO -   Allocation difference: 4.3%
+2024-11-16 19:16:56,693 - INFO -   Score: 32.4
+2024-11-16 19:16:56,693 - INFO - 
+Analyzing arbitrum:
+2024-11-16 19:16:56,694 - INFO -   Current price: $0.69
+2024-11-16 19:16:56,694 - INFO -   24h change: 16.1%
+2024-11-16 19:16:56,694 - INFO -   7d change: 15.7%
+2024-11-16 19:16:56,694 - INFO -   Current allocation: 0.5% (Target: 5.0%)
+2024-11-16 19:16:56,695 - INFO -   Allocation difference: 4.5%
+2024-11-16 19:16:56,695 - INFO -   Score: 6.8
+2024-11-16 19:16:56,695 - INFO - 
+Analyzing chainlink:
+2024-11-16 19:16:56,695 - INFO -   Current price: $14.50
+2024-11-16 19:16:56,695 - INFO -   24h change: 7.5%
+2024-11-16 19:16:56,695 - INFO -   7d change: 6.7%
+2024-11-16 19:16:56,695 - INFO -   Current allocation: 1.0% (Target: 2.5%)
+2024-11-16 19:16:56,695 - INFO -   Allocation difference: 1.5%
+2024-11-16 19:16:56,696 - INFO -   Score: 3.9
+2024-11-16 19:16:56,696 - INFO - 
+Analyzing sei-network:
+2024-11-16 19:16:56,696 - INFO -   Current price: $0.54
+2024-11-16 19:16:56,696 - INFO -   24h change: 21.5%
+2024-11-16 19:16:56,696 - INFO -   7d change: 29.1%
+2024-11-16 19:16:56,696 - INFO -   Current allocation: 0.1% (Target: 2.5%)
+2024-11-16 19:16:56,696 - INFO -   Allocation difference: 2.4%
+2024-11-16 19:16:56,696 - INFO -   Score: 22.0
+2024-11-16 19:16:56,696 - INFO - 
+Portfolio Analysis:
+2024-11-16 19:16:56,697 - INFO - Total Portfolio Value: $34,408.78
+2024-11-16 19:16:56,697 - INFO - 
+Holdings Breakdown:
+2024-11-16 19:16:56,697 - INFO - 
+BITCOIN:
+2024-11-16 19:16:56,697 - INFO -   Amount: 0.2282 tokens
+2024-11-16 19:16:56,697 - INFO -   Price: $91,167.0000
+2024-11-16 19:16:56,697 - INFO -   Value: $20,800.48
+2024-11-16 19:16:56,697 - INFO -   Portfolio %: [31m60.45% (target: 50.00%)[0m
+2024-11-16 19:16:56,697 - INFO - 
+ETHEREUM:
+2024-11-16 19:16:56,697 - INFO -   Amount: 2.9683 tokens
+2024-11-16 19:16:56,698 - INFO -   Price: $3,173.0700
+2024-11-16 19:16:56,698 - INFO -   Value: $9,418.66
+2024-11-16 19:16:56,698 - INFO -   Portfolio %: [31m27.37% (target: 20.00%)[0m
+2024-11-16 19:16:56,698 - INFO - 
+SOLANA:
+2024-11-16 19:16:56,698 - INFO -   Amount: 11.7445 tokens
+2024-11-16 19:16:56,698 - INFO -   Price: $216.0900
+2024-11-16 19:16:56,698 - INFO -   Value: $2,537.87
+2024-11-16 19:16:56,698 - INFO -   Portfolio %: [32m7.38% (target: 12.50%)[0m
+2024-11-16 19:16:56,698 - INFO - 
+SUI:
+2024-11-16 19:16:56,698 - INFO -   Amount: 301.3600 tokens
+2024-11-16 19:16:56,698 - INFO -   Price: $3.6900
+2024-11-16 19:16:56,698 - INFO -   Value: $1,112.02
+2024-11-16 19:16:56,698 - INFO -   Portfolio %: [32m3.23% (target: 7.50%)[0m
+2024-11-16 19:16:56,698 - INFO - 
+CHAINLINK:
+2024-11-16 19:16:56,698 - INFO -   Amount: 24.0300 tokens
+2024-11-16 19:16:56,699 - INFO -   Price: $14.5000
+2024-11-16 19:16:56,699 - INFO -   Value: $348.44
+2024-11-16 19:16:56,699 - INFO -   Portfolio %: [32m1.01% (target: 2.50%)[0m
+2024-11-16 19:16:56,699 - INFO - 
+ARBITRUM:
+2024-11-16 19:16:56,699 - INFO -   Amount: 243.5500 tokens
+2024-11-16 19:16:56,699 - INFO -   Price: $0.6895
+2024-11-16 19:16:56,699 - INFO -   Value: $167.93
+2024-11-16 19:16:56,699 - INFO -   Portfolio %: [32m0.49% (target: 5.00%)[0m
+2024-11-16 19:16:56,699 - INFO - 
+SEI-NETWORK:
+2024-11-16 19:16:56,699 - INFO -   Amount: 43.6400 tokens
+2024-11-16 19:16:56,699 - INFO -   Price: $0.5361
+2024-11-16 19:16:56,699 - INFO -   Value: $23.39
+2024-11-16 19:16:56,699 - INFO -   Portfolio %: [32m0.07% (target: 2.50%)[0m
+2024-11-16 19:16:56,699 - INFO - 
+Final Recommendation:
+2024-11-16 19:16:56,699 - INFO - Buy SOLANA
+2024-11-16 19:16:56,699 - INFO - Amount: $100.00
+2024-11-16 19:16:56,699 - INFO - Current price: $216.0900
+2024-11-16 19:16:56,699 - INFO - Reasoning:
+2024-11-16 19:16:56,699 - INFO -   - 24h change: 2.5%
+2024-11-16 19:16:56,699 - INFO -   - 7d change: 8.9%
+2024-11-16 19:16:56,699 - INFO -   - Weighted change: 7.0%
+2024-11-16 19:16:56,699 - INFO -   - Allocation diff: 5.1%
+2024-11-16 19:16:56,699 - INFO -   - BTC dominance: 45.0%
+2024-11-16 19:16:56,700 - INFO - 
+=== CURRENT PORTFOLIO SUMMARY ===
+2024-11-16 19:16:56,700 - INFO - Total Portfolio Value: $34,408.78
+2024-11-16 19:16:56,700 - INFO - 
+Holdings Breakdown:
+2024-11-16 19:16:56,700 - INFO - BITCOIN:
+2024-11-16 19:16:56,700 - INFO -   Amount: 0.2282 tokens
+2024-11-16 19:16:56,700 - INFO -   Price per token: $91,167.0000
+2024-11-16 19:16:56,700 - INFO -   Total Value: $20,800.48
+2024-11-16 19:16:56,700 - INFO -   Portfolio %: [31m60.45% (target: 50.00%)[0m
+2024-11-16 19:16:56,700 - INFO - ETHEREUM:
+2024-11-16 19:16:56,700 - INFO -   Amount: 2.9683 tokens
+2024-11-16 19:16:56,700 - INFO -   Price per token: $3,173.0700
+2024-11-16 19:16:56,700 - INFO -   Total Value: $9,418.66
+2024-11-16 19:16:56,700 - INFO -   Portfolio %: [31m27.37% (target: 20.00%)[0m
+2024-11-16 19:16:56,700 - INFO - SOLANA:
+2024-11-16 19:16:56,700 - INFO -   Amount: 11.7445 tokens
+2024-11-16 19:16:56,701 - INFO -   Price per token: $216.0900
+2024-11-16 19:16:56,701 - INFO -   Total Value: $2,537.87
+2024-11-16 19:16:56,701 - INFO -   Portfolio %: [32m7.38% (target: 12.50%)[0m
+2024-11-16 19:16:56,701 - INFO - SUI:
+2024-11-16 19:16:56,701 - INFO -   Amount: 301.3600 tokens
+2024-11-16 19:16:56,701 - INFO -   Price per token: $3.6900
+2024-11-16 19:16:56,701 - INFO -   Total Value: $1,112.02
+2024-11-16 19:16:56,701 - INFO -   Portfolio %: [32m3.23% (target: 7.50%)[0m
+2024-11-16 19:16:56,701 - INFO - CHAINLINK:
+2024-11-16 19:16:56,701 - INFO -   Amount: 24.0300 tokens
+2024-11-16 19:16:56,701 - INFO -   Price per token: $14.5000
+2024-11-16 19:16:56,701 - INFO -   Total Value: $348.44
+2024-11-16 19:16:56,701 - INFO -   Portfolio %: [32m1.01% (target: 2.50%)[0m
+2024-11-16 19:16:56,701 - INFO - ARBITRUM:
+2024-11-16 19:16:56,701 - INFO -   Amount: 243.5500 tokens
+2024-11-16 19:16:56,701 - INFO -   Price per token: $0.6895
+2024-11-16 19:16:56,701 - INFO -   Total Value: $167.93
+2024-11-16 19:16:56,701 - INFO -   Portfolio %: [32m0.49% (target: 5.00%)[0m
+2024-11-16 19:16:56,701 - INFO - SEI-NETWORK:
+2024-11-16 19:16:56,702 - INFO -   Amount: 43.6400 tokens
+2024-11-16 19:16:56,702 - INFO -   Price per token: $0.5361
+2024-11-16 19:16:56,702 - INFO -   Total Value: $23.39
+2024-11-16 19:16:56,702 - INFO -   Portfolio %: [32m0.07% (target: 2.50%)[0m
+2024-11-16 19:16:56,702 - INFO - 
+=== TRADE RECOMMENDATION ===
+2024-11-16 19:16:56,702 - INFO - Buy solana
+2024-11-16 19:16:56,702 - INFO - Amount: $100.00
+2024-11-16 19:16:56,702 - INFO - Current price: $216.0900
+2024-11-16 19:16:56,702 - INFO - 24h change: 2.5%
+2024-11-16 19:16:56,702 - INFO - 7d change: 8.9%
+2024-11-17 06:45:21,676 - INFO - Initialized DCA Trader with $100 daily budget
+2024-11-17 06:45:21,676 - INFO - Target allocations: {
+  "bitcoin": 0.5,
+  "ethereum": 0.2,
+  "solana": 0.125,
+  "sui": 0.075,
+  "arbitrum": 0.05,
+  "chainlink": 0.025,
+  "sei-network": 0.025
+}
+2024-11-17 06:45:21,676 - INFO - Fetching current prices from CoinGecko...
+2024-11-17 06:45:21,916 - INFO - Current prices fetched successfully:
+2024-11-17 06:45:21,916 - INFO - arbitrum: $0.69
+2024-11-17 06:45:21,916 - INFO - bitcoin: $90,402.00
+2024-11-17 06:45:21,916 - INFO - chainlink: $14.20
+2024-11-17 06:45:21,916 - INFO - ethereum: $3,097.69
+2024-11-17 06:45:21,916 - INFO - sei-network: $0.52
+2024-11-17 06:45:21,916 - INFO - solana: $235.12
+2024-11-17 06:45:21,917 - INFO - sui: $3.66
+2024-11-17 06:45:21,917 - INFO - 
+==================================================
+2024-11-17 06:45:21,917 - INFO - Starting new trade analysis...
+2024-11-17 06:45:21,917 - INFO - Using cached prices
+2024-11-17 06:45:21,917 - INFO - Fetching 7-day price history...
+2024-11-17 06:45:21,917 - INFO - Fetching history for bitcoin...
+2024-11-17 06:45:22,136 - INFO - Fetched 169 data points for bitcoin
+2024-11-17 06:45:22,136 - INFO - Fetching history for ethereum...
+2024-11-17 06:45:22,381 - INFO - Fetched 169 data points for ethereum
+2024-11-17 06:45:22,382 - INFO - Fetching history for solana...
+2024-11-17 06:45:22,497 - INFO - Fetched 169 data points for solana
+2024-11-17 06:45:22,498 - INFO - Fetching history for sui...
+2024-11-17 06:45:22,745 - INFO - Fetched 169 data points for sui
+2024-11-17 06:45:22,746 - INFO - Fetching history for arbitrum...
+2024-11-17 06:45:22,963 - INFO - Fetched 169 data points for arbitrum
+2024-11-17 06:45:22,963 - INFO - Fetching history for chainlink...
+2024-11-17 06:45:23,161 - INFO - Fetched 169 data points for chainlink
+2024-11-17 06:45:23,161 - INFO - Fetching history for sei-network...
+2024-11-17 06:45:23,379 - INFO - Fetched 169 data points for sei-network
+2024-11-17 06:45:23,379 - INFO - Successfully fetched all price histories
+2024-11-17 06:45:23,379 - INFO - Fetching BTC dominance...
+2024-11-17 06:45:23,802 - ERROR - Error fetching BTC dominance: 429 Client Error: Too Many Requests for url: https://api.coingecko.com/api/v3/global
+2024-11-17 06:45:23,802 - INFO - Using default BTC dominance of 45%
+2024-11-17 06:45:23,802 - INFO - Using cached prices
+2024-11-17 06:45:23,803 - INFO - 
+Analyzing bitcoin:
+2024-11-17 06:45:23,803 - INFO -   Current price: $90,402.00
+2024-11-17 06:45:23,804 - INFO -   24h change: -0.9%
+2024-11-17 06:45:23,804 - INFO -   7d change: 14.5%
+2024-11-17 06:45:23,804 - INFO -   Current allocation: 59.7% (Target: 50.0%)
+2024-11-17 06:45:23,804 - INFO -   Allocation difference: -9.7%
+2024-11-17 06:45:23,804 - INFO -   Score: 29.3
+2024-11-17 06:45:23,804 - INFO - 
+Analyzing ethereum:
+2024-11-17 06:45:23,804 - INFO -   Current price: $3,097.69
+2024-11-17 06:45:23,804 - INFO -   24h change: -0.6%
+2024-11-17 06:45:23,804 - INFO -   7d change: -2.6%
+2024-11-17 06:45:23,804 - INFO -   Current allocation: 26.6% (Target: 20.0%)
+2024-11-17 06:45:23,804 - INFO -   Allocation difference: -6.6%
+2024-11-17 06:45:23,804 - INFO -   Score: 11.2
+2024-11-17 06:45:23,805 - INFO - 
+Analyzing solana:
+2024-11-17 06:45:23,805 - INFO -   Current price: $235.12
+2024-11-17 06:45:23,805 - INFO -   24h change: 7.7%
+2024-11-17 06:45:23,805 - INFO -   7d change: 14.2%
+2024-11-17 06:45:23,805 - INFO -   Current allocation: 9.0% (Target: 12.5%)
+2024-11-17 06:45:23,805 - INFO -   Allocation difference: 3.5%
+2024-11-17 06:45:23,805 - INFO -   Score: 5.2
+2024-11-17 06:45:23,805 - INFO - 
+Analyzing sui:
+2024-11-17 06:45:23,805 - INFO -   Current price: $3.66
+2024-11-17 06:45:23,805 - INFO -   24h change: -1.9%
+2024-11-17 06:45:23,805 - INFO -   7d change: 29.8%
+2024-11-17 06:45:23,805 - INFO -   Current allocation: 3.2% (Target: 7.5%)
+2024-11-17 06:45:23,805 - INFO -   Allocation difference: 4.3%
+2024-11-17 06:45:23,805 - INFO -   Score: 11.7
+2024-11-17 06:45:23,806 - INFO - 
+Analyzing arbitrum:
+2024-11-17 06:45:23,806 - INFO -   Current price: $0.69
+2024-11-17 06:45:23,806 - INFO -   24h change: 12.7%
+2024-11-17 06:45:23,806 - INFO -   7d change: 11.3%
+2024-11-17 06:45:23,806 - INFO -   Current allocation: 0.5% (Target: 5.0%)
+2024-11-17 06:45:23,808 - INFO -   Allocation difference: 4.5%
+2024-11-17 06:45:23,808 - INFO -   Score: 2.7
+2024-11-17 06:45:23,808 - INFO - 
+Analyzing chainlink:
+2024-11-17 06:45:23,809 - INFO -   Current price: $14.20
+2024-11-17 06:45:23,809 - INFO -   24h change: 1.7%
+2024-11-17 06:45:23,809 - INFO -   7d change: -0.8%
+2024-11-17 06:45:23,809 - INFO -   Current allocation: 1.0% (Target: 2.5%)
+2024-11-17 06:45:23,809 - INFO -   Allocation difference: 1.5%
+2024-11-17 06:45:23,809 - INFO -   Score: -3.0
+2024-11-17 06:45:23,809 - INFO - 
+Analyzing sei-network:
+2024-11-17 06:45:23,809 - INFO -   Current price: $0.52
+2024-11-17 06:45:23,809 - INFO -   24h change: 2.6%
+2024-11-17 06:45:23,809 - INFO -   7d change: 15.2%
+2024-11-17 06:45:23,809 - INFO -   Current allocation: 0.1% (Target: 2.5%)
+2024-11-17 06:45:23,809 - INFO -   Allocation difference: 2.4%
+2024-11-17 06:45:23,809 - INFO -   Score: 6.6
+2024-11-17 06:45:23,809 - INFO - 
+Portfolio Analysis:
+2024-11-17 06:45:23,810 - INFO - Total Portfolio Value: $34,559.38
+2024-11-17 06:45:23,810 - INFO - 
+Holdings Breakdown:
+2024-11-17 06:45:23,810 - INFO - 
+BITCOIN:
+2024-11-17 06:45:23,810 - INFO -   Amount: 0.2282 tokens
+2024-11-17 06:45:23,810 - INFO -   Price: $90,402.0000
+2024-11-17 06:45:23,810 - INFO -   Value: $20,625.94
+2024-11-17 06:45:23,810 - INFO -   Portfolio %: [31m59.68% (target: 50.00%)[0m
+2024-11-17 06:45:23,810 - INFO - 
+ETHEREUM:
+2024-11-17 06:45:23,810 - INFO -   Amount: 2.9683 tokens
+2024-11-17 06:45:23,810 - INFO -   Price: $3,097.6900
+2024-11-17 06:45:23,810 - INFO -   Value: $9,194.90
+2024-11-17 06:45:23,810 - INFO -   Portfolio %: [31m26.61% (target: 20.00%)[0m
+2024-11-17 06:45:23,810 - INFO - 
+SOLANA:
+2024-11-17 06:45:23,810 - INFO -   Amount: 13.1991 tokens
+2024-11-17 06:45:23,811 - INFO -   Price: $235.1200
+2024-11-17 06:45:23,811 - INFO -   Value: $3,103.37
+2024-11-17 06:45:23,811 - INFO -   Portfolio %: [32m8.98% (target: 12.50%)[0m
+2024-11-17 06:45:23,811 - INFO - 
+SUI:
+2024-11-17 06:45:23,811 - INFO -   Amount: 301.3600 tokens
+2024-11-17 06:45:23,811 - INFO -   Price: $3.6600
+2024-11-17 06:45:23,811 - INFO -   Value: $1,102.98
+2024-11-17 06:45:23,811 - INFO -   Portfolio %: [32m3.19% (target: 7.50%)[0m
+2024-11-17 06:45:23,811 - INFO - 
+CHAINLINK:
+2024-11-17 06:45:23,811 - INFO -   Amount: 24.0300 tokens
+2024-11-17 06:45:23,811 - INFO -   Price: $14.2000
+2024-11-17 06:45:23,811 - INFO -   Value: $341.23
+2024-11-17 06:45:23,811 - INFO -   Portfolio %: [32m0.99% (target: 2.50%)[0m
+2024-11-17 06:45:23,811 - INFO - 
+ARBITRUM:
+2024-11-17 06:45:23,812 - INFO -   Amount: 243.5500 tokens
+2024-11-17 06:45:23,812 - INFO -   Price: $0.6911
+2024-11-17 06:45:23,812 - INFO -   Value: $168.32
+2024-11-17 06:45:23,812 - INFO -   Portfolio %: [32m0.49% (target: 5.00%)[0m
+2024-11-17 06:45:23,812 - INFO - 
+SEI-NETWORK:
+2024-11-17 06:45:23,812 - INFO -   Amount: 43.6400 tokens
+2024-11-17 06:45:23,812 - INFO -   Price: $0.5190
+2024-11-17 06:45:23,812 - INFO -   Value: $22.65
+2024-11-17 06:45:23,812 - INFO -   Portfolio %: [32m0.07% (target: 2.50%)[0m
+2024-11-17 06:45:23,812 - INFO - 
+Final Recommendation:
+2024-11-17 06:45:23,812 - INFO - Buy CHAINLINK
+2024-11-17 06:45:23,812 - INFO - Amount: $100.00
+2024-11-17 06:45:23,812 - INFO - Current price: $14.2000
+2024-11-17 06:45:23,812 - INFO - Reasoning:
+2024-11-17 06:45:23,812 - INFO -   - 24h change: 1.7%
+2024-11-17 06:45:23,812 - INFO -   - 7d change: -0.8%
+2024-11-17 06:45:23,812 - INFO -   - Weighted change: -0.0%
+2024-11-17 06:45:23,812 - INFO -   - Allocation diff: 1.5%
+2024-11-17 06:45:23,813 - INFO -   - BTC dominance: 45.0%
+2024-11-17 06:45:23,813 - INFO - 
+=== CURRENT PORTFOLIO SUMMARY ===
+2024-11-17 06:45:23,813 - INFO - Total Portfolio Value: $34,559.38
+2024-11-17 06:45:23,813 - INFO - 
+Holdings Breakdown:
+2024-11-17 06:45:23,813 - INFO - BITCOIN:
+2024-11-17 06:45:23,813 - INFO -   Amount: 0.2282 tokens
+2024-11-17 06:45:23,813 - INFO -   Price per token: $90,402.0000
+2024-11-17 06:45:23,813 - INFO -   Total Value: $20,625.94
+2024-11-17 06:45:23,813 - INFO -   Portfolio %: [31m59.68% (target: 50.00%)[0m
+2024-11-17 06:45:23,813 - INFO - ETHEREUM:
+2024-11-17 06:45:23,813 - INFO -   Amount: 2.9683 tokens
+2024-11-17 06:45:23,813 - INFO -   Price per token: $3,097.6900
+2024-11-17 06:45:23,813 - INFO -   Total Value: $9,194.90
+2024-11-17 06:45:23,813 - INFO -   Portfolio %: [31m26.61% (target: 20.00%)[0m
+2024-11-17 06:45:23,813 - INFO - SOLANA:
+2024-11-17 06:45:23,813 - INFO -   Amount: 13.1991 tokens
+2024-11-17 06:45:23,813 - INFO -   Price per token: $235.1200
+2024-11-17 06:45:23,814 - INFO -   Total Value: $3,103.37
+2024-11-17 06:45:23,814 - INFO -   Portfolio %: [32m8.98% (target: 12.50%)[0m
+2024-11-17 06:45:23,814 - INFO - SUI:
+2024-11-17 06:45:23,814 - INFO -   Amount: 301.3600 tokens
+2024-11-17 06:45:23,814 - INFO -   Price per token: $3.6600
+2024-11-17 06:45:23,814 - INFO -   Total Value: $1,102.98
+2024-11-17 06:45:23,814 - INFO -   Portfolio %: [32m3.19% (target: 7.50%)[0m
+2024-11-17 06:45:23,814 - INFO - CHAINLINK:
+2024-11-17 06:45:23,814 - INFO -   Amount: 24.0300 tokens
+2024-11-17 06:45:23,814 - INFO -   Price per token: $14.2000
+2024-11-17 06:45:23,814 - INFO -   Total Value: $341.23
+2024-11-17 06:45:23,814 - INFO -   Portfolio %: [32m0.99% (target: 2.50%)[0m
+2024-11-17 06:45:23,814 - INFO - ARBITRUM:
+2024-11-17 06:45:23,814 - INFO -   Amount: 243.5500 tokens
+2024-11-17 06:45:23,814 - INFO -   Price per token: $0.6911
+2024-11-17 06:45:23,814 - INFO -   Total Value: $168.32
+2024-11-17 06:45:23,814 - INFO -   Portfolio %: [32m0.49% (target: 5.00%)[0m
+2024-11-17 06:45:23,814 - INFO - SEI-NETWORK:
+2024-11-17 06:45:23,814 - INFO -   Amount: 43.6400 tokens
+2024-11-17 06:45:23,814 - INFO -   Price per token: $0.5190
+2024-11-17 06:45:23,814 - INFO -   Total Value: $22.65
+2024-11-17 06:45:23,814 - INFO -   Portfolio %: [32m0.07% (target: 2.50%)[0m
+2024-11-17 06:45:23,815 - INFO - 
+=== TRADE RECOMMENDATION ===
+2024-11-17 06:45:23,815 - INFO - Buy chainlink
+2024-11-17 06:45:23,815 - INFO - Amount: $100.00
+2024-11-17 06:45:23,815 - INFO - Current price: $14.2000
+2024-11-17 06:45:23,815 - INFO - 24h change: 1.7%
+2024-11-17 06:45:23,815 - INFO - 7d change: -0.8%
+2024-11-17 20:52:39,825 - INFO - Initialized DCA Trader with $100 daily budget
+2024-11-17 20:52:39,825 - INFO - Target allocations: {
+  "bitcoin": 0.5,
+  "ethereum": 0.2,
+  "solana": 0.125,
+  "sui": 0.075,
+  "arbitrum": 0.05,
+  "chainlink": 0.025,
+  "sei-network": 0.025
+}
+2024-11-17 20:52:39,825 - INFO - Fetching current prices from CoinGecko...
+2024-11-17 20:52:40,049 - INFO - Current prices fetched successfully:
+2024-11-17 20:52:40,049 - INFO - arbitrum: $0.68
+2024-11-17 20:52:40,049 - INFO - bitcoin: $90,096.00
+2024-11-17 20:52:40,049 - INFO - chainlink: $13.84
+2024-11-17 20:52:40,049 - INFO - ethereum: $3,094.16
+2024-11-17 20:52:40,049 - INFO - sei-network: $0.50
+2024-11-17 20:52:40,049 - INFO - solana: $235.17
+2024-11-17 20:52:40,049 - INFO - sui: $3.84
+2024-11-17 20:52:40,050 - INFO - 
+==================================================
+2024-11-17 20:52:40,050 - INFO - Starting new trade analysis...
+2024-11-17 20:52:40,050 - INFO - Using cached prices
+2024-11-17 20:52:40,050 - INFO - Fetching 7-day price history...
+2024-11-17 20:52:40,050 - INFO - Fetching history for bitcoin...
+2024-11-17 20:52:40,270 - INFO - Fetched 169 data points for bitcoin
+2024-11-17 20:52:40,270 - INFO - Fetching history for ethereum...
+2024-11-17 20:52:40,509 - INFO - Fetched 169 data points for ethereum
+2024-11-17 20:52:40,509 - INFO - Fetching history for solana...
+2024-11-17 20:52:40,741 - INFO - Fetched 169 data points for solana
+2024-11-17 20:52:40,741 - INFO - Fetching history for sui...
+2024-11-17 20:52:40,989 - INFO - Fetched 169 data points for sui
+2024-11-17 20:52:40,990 - INFO - Fetching history for arbitrum...
+2024-11-17 20:52:41,061 - WARNING - Rate limited. Waiting 1 seconds...
+2024-11-17 20:52:42,130 - WARNING - Rate limited. Waiting 2 seconds...
+2024-11-17 20:52:44,194 - WARNING - Rate limited. Waiting 4 seconds...
+2024-11-17 20:52:48,264 - WARNING - Rate limited. Waiting 8 seconds...
+2024-11-17 20:52:56,332 - WARNING - Rate limited. Waiting 16 seconds...
+2024-11-17 20:53:12,406 - WARNING - Rate limited. Waiting 32 seconds...
+2024-11-17 20:53:44,879 - INFO - Fetched 169 data points for arbitrum
+2024-11-17 20:53:44,880 - INFO - Fetching history for chainlink...
+2024-11-17 20:53:45,340 - INFO - Fetched 169 data points for chainlink
+2024-11-17 20:53:45,341 - INFO - Fetching history for sei-network...
+2024-11-17 20:53:45,637 - INFO - Fetched 169 data points for sei-network
+2024-11-17 20:53:45,637 - INFO - Successfully fetched all price histories
+2024-11-17 20:53:45,637 - INFO - Fetching BTC dominance...
+2024-11-17 20:53:46,106 - INFO - Current BTC dominance: 56.5%
+2024-11-17 20:53:46,106 - INFO - High BTC dominance: Market favors Bitcoin
+2024-11-17 20:53:46,107 - INFO - Using cached prices
+2024-11-17 20:53:46,108 - INFO - 
+Analyzing bitcoin:
+2024-11-17 20:53:46,108 - INFO -   Current price: $90,096.00
+2024-11-17 20:53:46,108 - INFO -   24h change: -0.9%
+2024-11-17 20:53:46,108 - INFO -   7d change: 13.2%
+2024-11-17 20:53:46,109 - INFO -   Current allocation: 59.5% (Target: 50.0%)
+2024-11-17 20:53:46,109 - INFO -   Allocation difference: -9.5%
+2024-11-17 20:53:46,109 - INFO -   Score: 27.9
+2024-11-17 20:53:46,109 - INFO - 
+Analyzing ethereum:
+2024-11-17 20:53:46,109 - INFO -   Current price: $3,094.16
+2024-11-17 20:53:46,109 - INFO -   24h change: -2.0%
+2024-11-17 20:53:46,109 - INFO -   7d change: -2.6%
+2024-11-17 20:53:46,109 - INFO -   Current allocation: 26.6% (Target: 20.0%)
+2024-11-17 20:53:46,109 - INFO -   Allocation difference: -6.6%
+2024-11-17 20:53:46,109 - INFO -   Score: 10.7
+2024-11-17 20:53:46,109 - INFO - 
+Analyzing solana:
+2024-11-17 20:53:46,109 - INFO -   Current price: $235.17
+2024-11-17 20:53:46,109 - INFO -   24h change: 8.4%
+2024-11-17 20:53:46,109 - INFO -   7d change: 12.8%
+2024-11-17 20:53:46,110 - INFO -   Current allocation: 9.0% (Target: 12.5%)
+2024-11-17 20:53:46,110 - INFO -   Allocation difference: 3.5%
+2024-11-17 20:53:46,110 - INFO -   Score: 4.4
+2024-11-17 20:53:46,110 - INFO - 
+Analyzing sui:
+2024-11-17 20:53:46,110 - INFO -   Current price: $3.84
+2024-11-17 20:53:46,110 - INFO -   24h change: 1.5%
+2024-11-17 20:53:46,110 - INFO -   7d change: 28.9%
+2024-11-17 20:53:46,110 - INFO -   Current allocation: 3.3% (Target: 7.5%)
+2024-11-17 20:53:46,110 - INFO -   Allocation difference: 4.2%
+2024-11-17 20:53:46,110 - INFO -   Score: 12.4
+2024-11-17 20:53:46,116 - INFO - 
+Analyzing arbitrum:
+2024-11-17 20:53:46,116 - INFO -   Current price: $0.68
+2024-11-17 20:53:46,116 - INFO -   24h change: -9.7%
+2024-11-17 20:53:46,116 - INFO -   7d change: 6.9%
+2024-11-17 20:53:46,116 - INFO -   Current allocation: 0.5% (Target: 5.0%)
+2024-11-17 20:53:46,116 - INFO -   Allocation difference: 4.5%
+2024-11-17 20:53:46,116 - INFO -   Score: -7.1
+2024-11-17 20:53:46,116 - INFO - 
+Analyzing chainlink:
+2024-11-17 20:53:46,116 - INFO -   Current price: $13.84
+2024-11-17 20:53:46,116 - INFO -   24h change: -6.6%
+2024-11-17 20:53:46,116 - INFO -   7d change: -6.8%
+2024-11-17 20:53:46,116 - INFO -   Current allocation: 1.1% (Target: 2.5%)
+2024-11-17 20:53:46,116 - INFO -   Allocation difference: 1.4%
+2024-11-17 20:53:46,116 - INFO -   Score: -9.5
+2024-11-17 20:53:46,116 - INFO - 
+Analyzing sei-network:
+2024-11-17 20:53:46,116 - INFO -   Current price: $0.50
+2024-11-17 20:53:46,116 - INFO -   24h change: -6.5%
+2024-11-17 20:53:46,116 - INFO -   7d change: 8.3%
+2024-11-17 20:53:46,117 - INFO -   Current allocation: 0.1% (Target: 2.5%)
+2024-11-17 20:53:46,117 - INFO -   Allocation difference: 2.4%
+2024-11-17 20:53:46,117 - INFO -   Score: -1.0
+2024-11-17 20:53:46,117 - INFO - 
+Portfolio Analysis:
+2024-11-17 20:53:46,117 - INFO - Total Portfolio Value: $34,570.32
+2024-11-17 20:53:46,117 - INFO - 
+Holdings Breakdown:
+2024-11-17 20:53:46,117 - INFO - 
+BITCOIN:
+2024-11-17 20:53:46,117 - INFO -   Amount: 0.2282 tokens
+2024-11-17 20:53:46,117 - INFO -   Price: $90,096.0000
+2024-11-17 20:53:46,117 - INFO -   Value: $20,556.12
+2024-11-17 20:53:46,117 - INFO -   Portfolio %: [31m59.46% (target: 50.00%)[0m
+2024-11-17 20:53:46,117 - INFO - 
+ETHEREUM:
+2024-11-17 20:53:46,117 - INFO -   Amount: 2.9683 tokens
+2024-11-17 20:53:46,117 - INFO -   Price: $3,094.1600
+2024-11-17 20:53:46,117 - INFO -   Value: $9,184.43
+2024-11-17 20:53:46,117 - INFO -   Portfolio %: [31m26.57% (target: 20.00%)[0m
+2024-11-17 20:53:46,117 - INFO - 
+SOLANA:
+2024-11-17 20:53:46,117 - INFO -   Amount: 13.1991 tokens
+2024-11-17 20:53:46,117 - INFO -   Price: $235.1700
+2024-11-17 20:53:46,117 - INFO -   Value: $3,104.03
+2024-11-17 20:53:46,117 - INFO -   Portfolio %: [32m8.98% (target: 12.50%)[0m
+2024-11-17 20:53:46,117 - INFO - 
+SUI:
+2024-11-17 20:53:46,117 - INFO -   Amount: 301.3600 tokens
+2024-11-17 20:53:46,118 - INFO -   Price: $3.8400
+2024-11-17 20:53:46,118 - INFO -   Value: $1,157.22
+2024-11-17 20:53:46,118 - INFO -   Portfolio %: [32m3.35% (target: 7.50%)[0m
+2024-11-17 20:53:46,118 - INFO - 
+CHAINLINK:
+2024-11-17 20:53:46,118 - INFO -   Amount: 27.5207 tokens
+2024-11-17 20:53:46,118 - INFO -   Price: $13.8400
+2024-11-17 20:53:46,118 - INFO -   Value: $380.89
+2024-11-17 20:53:46,118 - INFO -   Portfolio %: [32m1.10% (target: 2.50%)[0m
+2024-11-17 20:53:46,118 - INFO - 
+ARBITRUM:
+2024-11-17 20:53:46,118 - INFO -   Amount: 243.5500 tokens
+2024-11-17 20:53:46,118 - INFO -   Price: $0.6802
+2024-11-17 20:53:46,118 - INFO -   Value: $165.67
+2024-11-17 20:53:46,118 - INFO -   Portfolio %: [32m0.48% (target: 5.00%)[0m
+2024-11-17 20:53:46,118 - INFO - 
+SEI-NETWORK:
+2024-11-17 20:53:46,118 - INFO -   Amount: 43.6400 tokens
+2024-11-17 20:53:46,118 - INFO -   Price: $0.5031
+2024-11-17 20:53:46,118 - INFO -   Value: $21.96
+2024-11-17 20:53:46,118 - INFO -   Portfolio %: [32m0.06% (target: 2.50%)[0m
+2024-11-17 20:53:46,118 - INFO - 
+Final Recommendation:
+2024-11-17 20:53:46,118 - INFO - Buy CHAINLINK
+2024-11-17 20:53:46,118 - INFO - Amount: $100.00
+2024-11-17 20:53:46,118 - INFO - Current price: $13.8400
+2024-11-17 20:53:46,118 - INFO - Reasoning:
+2024-11-17 20:53:46,118 - INFO -   - 24h change: -6.6%
+2024-11-17 20:53:46,119 - INFO -   - 7d change: -6.8%
+2024-11-17 20:53:46,119 - INFO -   - Weighted change: -6.7%
+2024-11-17 20:53:46,119 - INFO -   - Allocation diff: 1.4%
+2024-11-17 20:53:46,119 - INFO -   - BTC dominance: 56.5%
+2024-11-17 20:53:46,119 - INFO - 
+=== CURRENT PORTFOLIO SUMMARY ===
+2024-11-17 20:53:46,119 - INFO - Total Portfolio Value: $34,570.32
+2024-11-17 20:53:46,119 - INFO - 
+Holdings Breakdown:
+2024-11-17 20:53:46,119 - INFO - BITCOIN:
+2024-11-17 20:53:46,119 - INFO -   Amount: 0.2282 tokens
+2024-11-17 20:53:46,119 - INFO -   Price per token: $90,096.0000
+2024-11-17 20:53:46,119 - INFO -   Total Value: $20,556.12
+2024-11-17 20:53:46,119 - INFO -   Portfolio %: [31m59.46% (target: 50.00%)[0m
+2024-11-17 20:53:46,119 - INFO - ETHEREUM:
+2024-11-17 20:53:46,119 - INFO -   Amount: 2.9683 tokens
+2024-11-17 20:53:46,119 - INFO -   Price per token: $3,094.1600
+2024-11-17 20:53:46,119 - INFO -   Total Value: $9,184.43
+2024-11-17 20:53:46,119 - INFO -   Portfolio %: [31m26.57% (target: 20.00%)[0m
+2024-11-17 20:53:46,119 - INFO - SOLANA:
+2024-11-17 20:53:46,119 - INFO -   Amount: 13.1991 tokens
+2024-11-17 20:53:46,119 - INFO -   Price per token: $235.1700
+2024-11-17 20:53:46,119 - INFO -   Total Value: $3,104.03
+2024-11-17 20:53:46,119 - INFO -   Portfolio %: [32m8.98% (target: 12.50%)[0m
+2024-11-17 20:53:46,119 - INFO - SUI:
+2024-11-17 20:53:46,119 - INFO -   Amount: 301.3600 tokens
+2024-11-17 20:53:46,120 - INFO -   Price per token: $3.8400
+2024-11-17 20:53:46,120 - INFO -   Total Value: $1,157.22
+2024-11-17 20:53:46,120 - INFO -   Portfolio %: [32m3.35% (target: 7.50%)[0m
+2024-11-17 20:53:46,120 - INFO - CHAINLINK:
+2024-11-17 20:53:46,120 - INFO -   Amount: 27.5207 tokens
+2024-11-17 20:53:46,120 - INFO -   Price per token: $13.8400
+2024-11-17 20:53:46,120 - INFO -   Total Value: $380.89
+2024-11-17 20:53:46,120 - INFO -   Portfolio %: [32m1.10% (target: 2.50%)[0m
+2024-11-17 20:53:46,120 - INFO - ARBITRUM:
+2024-11-17 20:53:46,120 - INFO -   Amount: 243.5500 tokens
+2024-11-17 20:53:46,120 - INFO -   Price per token: $0.6802
+2024-11-17 20:53:46,120 - INFO -   Total Value: $165.67
+2024-11-17 20:53:46,120 - INFO -   Portfolio %: [32m0.48% (target: 5.00%)[0m
+2024-11-17 20:53:46,120 - INFO - SEI-NETWORK:
+2024-11-17 20:53:46,120 - INFO -   Amount: 43.6400 tokens
+2024-11-17 20:53:46,120 - INFO -   Price per token: $0.5031
+2024-11-17 20:53:46,120 - INFO -   Total Value: $21.96
+2024-11-17 20:53:46,120 - INFO -   Portfolio %: [32m0.06% (target: 2.50%)[0m
+2024-11-17 20:53:46,120 - INFO - 
+=== TRADE RECOMMENDATION ===
+2024-11-17 20:53:46,120 - INFO - Buy chainlink
+2024-11-17 20:53:46,121 - INFO - Amount: $100.00
+2024-11-17 20:53:46,121 - INFO - Current price: $13.8400
+2024-11-17 20:53:46,121 - INFO - 24h change: -6.6%
+2024-11-17 20:53:46,121 - INFO - 7d change: -6.8%
+2024-11-18 07:29:36,860 - INFO - Initialized DCA Trader with $100 daily budget
+2024-11-18 07:29:36,860 - INFO - Target allocations: {
+  "bitcoin": 0.5,
+  "ethereum": 0.2,
+  "solana": 0.125,
+  "sui": 0.075,
+  "arbitrum": 0.05,
+  "chainlink": 0.025,
+  "sei-network": 0.025
+}
+2024-11-18 07:29:36,860 - INFO - Fetching current prices from CoinGecko...
+2024-11-18 07:29:37,130 - INFO - Current prices fetched successfully:
+2024-11-18 07:29:37,131 - INFO - arbitrum: $0.70
+2024-11-18 07:29:37,131 - INFO - bitcoin: $90,922.00
+2024-11-18 07:29:37,131 - INFO - chainlink: $14.56
+2024-11-18 07:29:37,131 - INFO - ethereum: $3,128.97
+2024-11-18 07:29:37,131 - INFO - sei-network: $0.52
+2024-11-18 07:29:37,131 - INFO - solana: $242.46
+2024-11-18 07:29:37,131 - INFO - sui: $3.78
+2024-11-18 07:29:37,132 - INFO - 
+==================================================
+2024-11-18 07:29:37,132 - INFO - Starting new trade analysis...
+2024-11-18 07:29:37,132 - INFO - Using cached prices
+2024-11-18 07:29:37,132 - INFO - Fetching 7-day price history...
+2024-11-18 07:29:37,132 - INFO - Fetching history for bitcoin...
+2024-11-18 07:29:37,377 - INFO - Fetched 169 data points for bitcoin
+2024-11-18 07:29:37,378 - INFO - Fetching history for ethereum...
+2024-11-18 07:29:37,599 - INFO - Fetched 169 data points for ethereum
+2024-11-18 07:29:37,600 - INFO - Fetching history for solana...
+2024-11-18 07:29:37,854 - INFO - Fetched 169 data points for solana
+2024-11-18 07:29:37,854 - INFO - Fetching history for sui...
+2024-11-18 07:29:38,097 - INFO - Fetched 170 data points for sui
+2024-11-18 07:29:38,098 - INFO - Fetching history for arbitrum...
+2024-11-18 07:29:38,480 - INFO - 
+Gracefully shutting down...
+2024-11-18 07:36:18,817 - INFO - Initialized DCA Trader with $100 daily budget
+2024-11-18 07:36:18,817 - INFO - Target allocations: {
+  "bitcoin": 0.5,
+  "ethereum": 0.2,
+  "solana": 0.125,
+  "sui": 0.075,
+  "arbitrum": 0.05,
+  "chainlink": 0.025,
+  "sei-network": 0.025
+}
+2024-11-18 07:36:18,817 - INFO - Fetching current prices from CoinGecko...
+2024-11-18 07:36:19,086 - INFO - Current prices fetched successfully:
+2024-11-18 07:36:19,086 - INFO - arbitrum: $0.70
+2024-11-18 07:36:19,086 - INFO - bitcoin: $91,165.00
+2024-11-18 07:36:19,086 - INFO - chainlink: $14.64
+2024-11-18 07:36:19,086 - INFO - ethereum: $3,140.41
+2024-11-18 07:36:19,086 - INFO - sei-network: $0.52
+2024-11-18 07:36:19,086 - INFO - solana: $242.82
+2024-11-18 07:36:19,087 - INFO - sui: $3.79
+2024-11-18 07:36:19,087 - INFO - 
+==================================================
+2024-11-18 07:36:19,087 - INFO - Starting new trade analysis...
+2024-11-18 07:36:19,087 - INFO - Using cached prices
+2024-11-18 07:36:19,087 - INFO - Fetching 7-day price history...
+2024-11-18 07:36:19,087 - INFO - Fetching history for bitcoin...
+2024-11-18 07:36:19,210 - INFO - Fetched 169 data points for bitcoin
+2024-11-18 07:36:19,210 - INFO - Fetching history for ethereum...
+2024-11-18 07:36:19,453 - INFO - Fetched 169 data points for ethereum
+2024-11-18 07:36:19,454 - INFO - Fetching history for solana...
+2024-11-18 07:36:19,577 - INFO - Fetched 169 data points for solana
+2024-11-18 07:36:19,578 - INFO - Fetching history for sui...
+2024-11-18 07:36:19,830 - INFO - Fetched 170 data points for sui
+2024-11-18 07:36:19,830 - INFO - Fetching history for arbitrum...
+2024-11-18 07:36:20,055 - INFO - Fetched 169 data points for arbitrum
+2024-11-18 07:36:20,055 - INFO - Fetching history for chainlink...
+2024-11-18 07:36:20,474 - INFO - Fetched 169 data points for chainlink
+2024-11-18 07:36:20,474 - INFO - Fetching history for sei-network...
+2024-11-18 07:36:20,720 - INFO - Fetched 168 data points for sei-network
+2024-11-18 07:36:20,721 - INFO - Successfully fetched all price histories
+2024-11-18 07:36:20,721 - INFO - Fetching BTC dominance...
+2024-11-18 07:36:20,954 - INFO - Current BTC dominance: 56.1%
+2024-11-18 07:36:20,955 - INFO - High BTC dominance: Market favors Bitcoin
+2024-11-18 07:36:20,955 - INFO - Using cached prices
+2024-11-18 07:36:20,957 - INFO - 
+Analyzing bitcoin:
+2024-11-18 07:36:20,957 - INFO -   Current price: $91,165.00
+2024-11-18 07:36:20,957 - INFO -   24h change: 0.2%
+2024-11-18 07:36:20,957 - INFO -   7d change: 12.1%
+2024-11-18 07:36:20,957 - INFO -   Current allocation: 59.1% (Target: 50.0%)
+2024-11-18 07:36:20,957 - INFO -   Allocation difference: -9.1%
+2024-11-18 07:36:20,957 - INFO -   Score: 26.8
+2024-11-18 07:36:20,957 - INFO - 
+Analyzing ethereum:
+2024-11-18 07:36:20,957 - INFO -   Current price: $3,140.41
+2024-11-18 07:36:20,957 - INFO -   24h change: -0.5%
+2024-11-18 07:36:20,957 - INFO -   7d change: -0.6%
+2024-11-18 07:36:20,958 - INFO -   Current allocation: 26.5% (Target: 20.0%)
+2024-11-18 07:36:20,958 - INFO -   Allocation difference: -6.5%
+2024-11-18 07:36:20,958 - INFO -   Score: 12.4
+2024-11-18 07:36:20,958 - INFO - 
+Analyzing solana:
+2024-11-18 07:36:20,958 - INFO -   Current price: $242.82
+2024-11-18 07:36:20,958 - INFO -   24h change: 2.2%
+2024-11-18 07:36:20,958 - INFO -   7d change: 17.2%
+2024-11-18 07:36:20,958 - INFO -   Current allocation: 9.3% (Target: 12.5%)
+2024-11-18 07:36:20,958 - INFO -   Allocation difference: 3.2%
+2024-11-18 07:36:20,958 - INFO -   Score: 6.3
+2024-11-18 07:36:20,958 - INFO - 
+Analyzing sui:
+2024-11-18 07:36:20,958 - INFO -   Current price: $3.79
+2024-11-18 07:36:20,958 - INFO -   24h change: 1.2%
+2024-11-18 07:36:20,958 - INFO -   7d change: 19.8%
+2024-11-18 07:36:20,958 - INFO -   Current allocation: 3.2% (Target: 7.5%)
+2024-11-18 07:36:20,958 - INFO -   Allocation difference: 4.3%
+2024-11-18 07:36:20,958 - INFO -   Score: 5.7
+2024-11-18 07:36:20,958 - INFO - 
+Analyzing arbitrum:
+2024-11-18 07:36:20,958 - INFO -   Current price: $0.70
+2024-11-18 07:36:20,958 - INFO -   24h change: -0.7%
+2024-11-18 07:36:20,958 - INFO -   7d change: 12.8%
+2024-11-18 07:36:20,958 - INFO -   Current allocation: 0.5% (Target: 5.0%)
+2024-11-18 07:36:20,961 - INFO -   Allocation difference: 4.5%
+2024-11-18 07:36:20,961 - INFO -   Score: -0.3
+2024-11-18 07:36:20,961 - INFO - 
+Analyzing chainlink:
+2024-11-18 07:36:20,961 - INFO -   Current price: $14.64
+2024-11-18 07:36:20,961 - INFO -   24h change: 1.2%
+2024-11-18 07:36:20,961 - INFO -   7d change: 5.8%
+2024-11-18 07:36:20,961 - INFO -   Current allocation: 1.3% (Target: 2.5%)
+2024-11-18 07:36:20,961 - INFO -   Allocation difference: 1.2%
+2024-11-18 07:36:20,961 - INFO -   Score: 2.0
+2024-11-18 07:36:20,961 - INFO - 
+Analyzing sei-network:
+2024-11-18 07:36:20,961 - INFO -   Current price: $0.52
+2024-11-18 07:36:20,961 - INFO -   24h change: 0.8%
+2024-11-18 07:36:20,961 - INFO -   7d change: 11.9%
+2024-11-18 07:36:20,961 - INFO -   Current allocation: 0.1% (Target: 2.5%)
+2024-11-18 07:36:20,961 - INFO -   Allocation difference: 2.4%
+2024-11-18 07:36:20,961 - INFO -   Score: 3.7
+2024-11-18 07:36:20,961 - INFO - 
+Portfolio Analysis:
+2024-11-18 07:36:20,961 - INFO - Total Portfolio Value: $35,177.59
+2024-11-18 07:36:20,961 - INFO - 
+Holdings Breakdown:
+2024-11-18 07:36:20,961 - INFO - 
+BITCOIN:
+2024-11-18 07:36:20,961 - INFO -   Amount: 0.2282 tokens
+2024-11-18 07:36:20,961 - INFO -   Price: $91,165.0000
+2024-11-18 07:36:20,961 - INFO -   Value: $20,800.02
+2024-11-18 07:36:20,961 - INFO -   Portfolio %: [31m59.13% (target: 50.00%)[0m
+2024-11-18 07:36:20,962 - INFO - 
+ETHEREUM:
+2024-11-18 07:36:20,962 - INFO -   Amount: 2.9683 tokens
+2024-11-18 07:36:20,962 - INFO -   Price: $3,140.4100
+2024-11-18 07:36:20,962 - INFO -   Value: $9,321.71
+2024-11-18 07:36:20,962 - INFO -   Portfolio %: [31m26.50% (target: 20.00%)[0m
+2024-11-18 07:36:20,962 - INFO - 
+SOLANA:
+2024-11-18 07:36:20,962 - INFO -   Amount: 13.4432 tokens
+2024-11-18 07:36:20,962 - INFO -   Price: $242.8200
+2024-11-18 07:36:20,962 - INFO -   Value: $3,264.28
+2024-11-18 07:36:20,962 - INFO -   Portfolio %: [32m9.28% (target: 12.50%)[0m
+2024-11-18 07:36:20,962 - INFO - 
+SUI:
+2024-11-18 07:36:20,962 - INFO -   Amount: 301.3600 tokens
+2024-11-18 07:36:20,962 - INFO -   Price: $3.7900
+2024-11-18 07:36:20,962 - INFO -   Value: $1,142.15
+2024-11-18 07:36:20,962 - INFO -   Portfolio %: [32m3.25% (target: 7.50%)[0m
+2024-11-18 07:36:20,962 - INFO - 
+CHAINLINK:
+2024-11-18 07:36:20,962 - INFO -   Amount: 31.1100 tokens
+2024-11-18 07:36:20,962 - INFO -   Price: $14.6400
+2024-11-18 07:36:20,962 - INFO -   Value: $455.45
+2024-11-18 07:36:20,962 - INFO -   Portfolio %: [32m1.29% (target: 2.50%)[0m
+2024-11-18 07:36:20,962 - INFO - 
+ARBITRUM:
+2024-11-18 07:36:20,962 - INFO -   Amount: 243.5500 tokens
+2024-11-18 07:36:20,962 - INFO -   Price: $0.7025
+2024-11-18 07:36:20,963 - INFO -   Value: $171.08
+2024-11-18 07:36:20,963 - INFO -   Portfolio %: [32m0.49% (target: 5.00%)[0m
+2024-11-18 07:36:20,963 - INFO - 
+SEI-NETWORK:
+2024-11-18 07:36:20,963 - INFO -   Amount: 43.6400 tokens
+2024-11-18 07:36:20,963 - INFO -   Price: $0.5245
+2024-11-18 07:36:20,963 - INFO -   Value: $22.89
+2024-11-18 07:36:20,963 - INFO -   Portfolio %: [32m0.07% (target: 2.50%)[0m
+2024-11-18 07:36:20,963 - INFO - 
+Final Recommendation:
+2024-11-18 07:36:20,963 - INFO - Buy ARBITRUM
+2024-11-18 07:36:20,963 - INFO - Amount: $100.00
+2024-11-18 07:36:20,963 - INFO - Current price: $0.7025
+2024-11-18 07:36:20,963 - INFO - Reasoning:
+2024-11-18 07:36:20,963 - INFO -   - 24h change: -0.7%
+2024-11-18 07:36:20,963 - INFO -   - 7d change: 12.8%
+2024-11-18 07:36:20,963 - INFO -   - Weighted change: 8.7%
+2024-11-18 07:36:20,963 - INFO -   - Allocation diff: 4.5%
+2024-11-18 07:36:20,963 - INFO -   - BTC dominance: 56.1%
+2024-11-18 07:36:20,963 - INFO - 
+=== CURRENT PORTFOLIO SUMMARY ===
+2024-11-18 07:36:20,963 - INFO - Total Portfolio Value: $35,177.59
+2024-11-18 07:36:20,963 - INFO - 
+Holdings Breakdown:
+2024-11-18 07:36:20,964 - INFO - BITCOIN:
+2024-11-18 07:36:20,964 - INFO -   Amount: 0.2282 tokens
+2024-11-18 07:36:20,964 - INFO -   Price per token: $91,165.0000
+2024-11-18 07:36:20,964 - INFO -   Total Value: $20,800.02
+2024-11-18 07:36:20,964 - INFO -   Portfolio %: [31m59.13% (target: 50.00%)[0m
+2024-11-18 07:36:20,964 - INFO - ETHEREUM:
+2024-11-18 07:36:20,964 - INFO -   Amount: 2.9683 tokens
+2024-11-18 07:36:20,964 - INFO -   Price per token: $3,140.4100
+2024-11-18 07:36:20,964 - INFO -   Total Value: $9,321.71
+2024-11-18 07:36:20,964 - INFO -   Portfolio %: [31m26.50% (target: 20.00%)[0m
+2024-11-18 07:36:20,964 - INFO - SOLANA:
+2024-11-18 07:36:20,964 - INFO -   Amount: 13.4432 tokens
+2024-11-18 07:36:20,964 - INFO -   Price per token: $242.8200
+2024-11-18 07:36:20,964 - INFO -   Total Value: $3,264.28
+2024-11-18 07:36:20,964 - INFO -   Portfolio %: [32m9.28% (target: 12.50%)[0m
+2024-11-18 07:36:20,964 - INFO - SUI:
+2024-11-18 07:36:20,964 - INFO -   Amount: 301.3600 tokens
+2024-11-18 07:36:20,964 - INFO -   Price per token: $3.7900
+2024-11-18 07:36:20,964 - INFO -   Total Value: $1,142.15
+2024-11-18 07:36:20,964 - INFO -   Portfolio %: [32m3.25% (target: 7.50%)[0m
+2024-11-18 07:36:20,964 - INFO - CHAINLINK:
+2024-11-18 07:36:20,964 - INFO -   Amount: 31.1100 tokens
+2024-11-18 07:36:20,964 - INFO -   Price per token: $14.6400
+2024-11-18 07:36:20,964 - INFO -   Total Value: $455.45
+2024-11-18 07:36:20,964 - INFO -   Portfolio %: [32m1.29% (target: 2.50%)[0m
+2024-11-18 07:36:20,964 - INFO - ARBITRUM:
+2024-11-18 07:36:20,964 - INFO -   Amount: 243.5500 tokens
+2024-11-18 07:36:20,964 - INFO -   Price per token: $0.7025
+2024-11-18 07:36:20,964 - INFO -   Total Value: $171.08
+2024-11-18 07:36:20,964 - INFO -   Portfolio %: [32m0.49% (target: 5.00%)[0m
+2024-11-18 07:36:20,964 - INFO - SEI-NETWORK:
+2024-11-18 07:36:20,964 - INFO -   Amount: 43.6400 tokens
+2024-11-18 07:36:20,965 - INFO -   Price per token: $0.5245
+2024-11-18 07:36:20,965 - INFO -   Total Value: $22.89
+2024-11-18 07:36:20,965 - INFO -   Portfolio %: [32m0.07% (target: 2.50%)[0m
+2024-11-18 07:36:20,965 - INFO - 
+=== TRADE RECOMMENDATION ===
+2024-11-18 07:36:20,965 - INFO - Buy arbitrum
+2024-11-18 07:36:20,965 - INFO - Amount: $100.00
+2024-11-18 07:36:20,965 - INFO - Current price: $0.7025
+2024-11-18 07:36:20,965 - INFO - 24h change: -0.7%
+2024-11-18 07:36:20,965 - INFO - 7d change: 12.8%
+2024-11-18 07:43:48,850 - INFO - Initialized DCA Trader with $100 daily budget
+2024-11-18 07:43:48,850 - INFO - Target allocations: {
+  "bitcoin": 0.5,
+  "ethereum": 0.2,
+  "solana": 0.125,
+  "sui": 0.075,
+  "arbitrum": 0.05,
+  "chainlink": 0.025,
+  "sei-network": 0.025
+}
+2024-11-18 07:43:48,850 - INFO - Fetching current prices from CoinGecko...
+2024-11-18 07:43:49,335 - INFO - Current prices fetched successfully:
+2024-11-18 07:43:49,335 - INFO - arbitrum: $0.70
+2024-11-18 07:43:49,335 - INFO - bitcoin: $91,260.00
+2024-11-18 07:43:49,335 - INFO - chainlink: $14.74
+2024-11-18 07:43:49,335 - INFO - ethereum: $3,144.70
+2024-11-18 07:43:49,335 - INFO - sei-network: $0.52
+2024-11-18 07:43:49,336 - INFO - solana: $242.84
+2024-11-18 07:43:49,336 - INFO - sui: $3.80
+2024-11-18 07:43:49,336 - INFO - 
+==================================================
+2024-11-18 07:43:49,336 - INFO - Starting new trade analysis...
+2024-11-18 07:43:49,336 - INFO - Using cached prices
+2024-11-18 07:43:49,336 - INFO - Fetching 7-day price history...
+2024-11-18 07:43:49,336 - INFO - Fetching history for bitcoin...
+2024-11-18 07:43:49,571 - INFO - Fetched 169 data points for bitcoin
+2024-11-18 07:43:49,571 - INFO - Fetching history for ethereum...
+2024-11-18 07:43:49,792 - INFO - Fetched 169 data points for ethereum
+2024-11-18 07:43:49,792 - INFO - Fetching history for solana...
+2024-11-18 07:43:50,015 - INFO - Fetched 169 data points for solana
+2024-11-18 07:43:50,015 - INFO - Fetching history for sui...
+2024-11-18 07:43:50,409 - INFO - Fetched 169 data points for sui
+2024-11-18 07:43:50,409 - INFO - Fetching history for arbitrum...
+2024-11-18 07:43:50,573 - WARNING - Rate limited. Waiting 1 seconds...
+2024-11-18 07:43:52,101 - INFO - Fetched 169 data points for arbitrum
+2024-11-18 07:43:52,101 - INFO - Fetching history for chainlink...
+2024-11-18 07:43:52,306 - INFO - Fetched 169 data points for chainlink
+2024-11-18 07:43:52,306 - INFO - Fetching history for sei-network...
+2024-11-18 07:43:52,554 - INFO - Fetched 169 data points for sei-network
+2024-11-18 07:43:52,554 - INFO - Successfully fetched all price histories
+2024-11-18 07:43:52,554 - INFO - Fetching BTC dominance...
+2024-11-18 07:43:52,760 - INFO - Current BTC dominance: 56.1%
+2024-11-18 07:43:52,761 - INFO - High BTC dominance: Market favors Bitcoin
+2024-11-18 07:43:52,761 - INFO - Using cached prices
+2024-11-18 07:43:52,762 - INFO - 
+Analyzing bitcoin:
+2024-11-18 07:43:52,762 - INFO -   Current price: $91,260.00
+2024-11-18 07:43:52,762 - INFO -   24h change: 0.2%
+2024-11-18 07:43:52,763 - INFO -   7d change: 12.1%
+2024-11-18 07:43:52,763 - INFO -   Current allocation: 59.1% (Target: 50.0%)
+2024-11-18 07:43:52,763 - INFO -   Allocation difference: -9.1%
+2024-11-18 07:43:52,763 - INFO -   Score: 26.8
+2024-11-18 07:43:52,763 - INFO - 
+Analyzing ethereum:
+2024-11-18 07:43:52,763 - INFO -   Current price: $3,144.70
+2024-11-18 07:43:52,763 - INFO -   24h change: -0.5%
+2024-11-18 07:43:52,763 - INFO -   7d change: -0.6%
+2024-11-18 07:43:52,763 - INFO -   Current allocation: 26.5% (Target: 20.0%)
+2024-11-18 07:43:52,763 - INFO -   Allocation difference: -6.5%
+2024-11-18 07:43:52,763 - INFO -   Score: 12.4
+2024-11-18 07:43:52,763 - INFO - 
+Analyzing solana:
+2024-11-18 07:43:52,763 - INFO -   Current price: $242.84
+2024-11-18 07:43:52,763 - INFO -   24h change: 2.2%
+2024-11-18 07:43:52,763 - INFO -   7d change: 17.3%
+2024-11-18 07:43:52,764 - INFO -   Current allocation: 9.3% (Target: 12.5%)
+2024-11-18 07:43:52,764 - INFO -   Allocation difference: 3.2%
+2024-11-18 07:43:52,764 - INFO -   Score: 6.3
+2024-11-18 07:43:52,764 - INFO - 
+Analyzing sui:
+2024-11-18 07:43:52,764 - INFO -   Current price: $3.80
+2024-11-18 07:43:52,764 - INFO -   24h change: 1.9%
+2024-11-18 07:43:52,764 - INFO -   7d change: 20.6%
+2024-11-18 07:43:52,764 - INFO -   Current allocation: 3.3% (Target: 7.5%)
+2024-11-18 07:43:52,764 - INFO -   Allocation difference: 4.2%
+2024-11-18 07:43:52,764 - INFO -   Score: 6.5
+2024-11-18 07:43:52,764 - INFO - 
+Analyzing arbitrum:
+2024-11-18 07:43:52,764 - INFO -   Current price: $0.70
+2024-11-18 07:43:52,764 - INFO -   24h change: -0.7%
+2024-11-18 07:43:52,764 - INFO -   7d change: 12.8%
+2024-11-18 07:43:52,764 - INFO -   Current allocation: 0.5% (Target: 5.0%)
+2024-11-18 07:43:52,767 - INFO -   Allocation difference: 4.5%
+2024-11-18 07:43:52,767 - INFO -   Score: -0.3
+2024-11-18 07:43:52,767 - INFO - 
+Analyzing chainlink:
+2024-11-18 07:43:52,767 - INFO -   Current price: $14.74
+2024-11-18 07:43:52,767 - INFO -   24h change: 1.2%
+2024-11-18 07:43:52,767 - INFO -   7d change: 5.8%
+2024-11-18 07:43:52,767 - INFO -   Current allocation: 1.3% (Target: 2.5%)
+2024-11-18 07:43:52,767 - INFO -   Allocation difference: 1.2%
+2024-11-18 07:43:52,767 - INFO -   Score: 2.0
+2024-11-18 07:43:52,767 - INFO - 
+Analyzing sei-network:
+2024-11-18 07:43:52,768 - INFO -   Current price: $0.52
+2024-11-18 07:43:52,768 - INFO -   24h change: -0.7%
+2024-11-18 07:43:52,768 - INFO -   7d change: 11.6%
+2024-11-18 07:43:52,768 - INFO -   Current allocation: 0.1% (Target: 2.5%)
+2024-11-18 07:43:52,768 - INFO -   Allocation difference: 2.4%
+2024-11-18 07:43:52,768 - INFO -   Score: 3.1
+2024-11-18 07:43:52,768 - INFO - 
+Portfolio Analysis:
+2024-11-18 07:43:52,768 - INFO - Total Portfolio Value: $35,218.49
+2024-11-18 07:43:52,768 - INFO - 
+Holdings Breakdown:
+2024-11-18 07:43:52,768 - INFO - 
+BITCOIN:
+2024-11-18 07:43:52,768 - INFO -   Amount: 0.2282 tokens
+2024-11-18 07:43:52,768 - INFO -   Price: $91,260.0000
+2024-11-18 07:43:52,768 - INFO -   Value: $20,821.70
+2024-11-18 07:43:52,768 - INFO -   Portfolio %: [31m59.12% (target: 50.00%)[0m
+2024-11-18 07:43:52,768 - INFO - 
+ETHEREUM:
+2024-11-18 07:43:52,768 - INFO -   Amount: 2.9683 tokens
+2024-11-18 07:43:52,768 - INFO -   Price: $3,144.7000
+2024-11-18 07:43:52,768 - INFO -   Value: $9,334.44
+2024-11-18 07:43:52,768 - INFO -   Portfolio %: [31m26.50% (target: 20.00%)[0m
+2024-11-18 07:43:52,768 - INFO - 
+SOLANA:
+2024-11-18 07:43:52,769 - INFO -   Amount: 13.4432 tokens
+2024-11-18 07:43:52,769 - INFO -   Price: $242.8400
+2024-11-18 07:43:52,769 - INFO -   Value: $3,264.55
+2024-11-18 07:43:52,769 - INFO -   Portfolio %: [32m9.27% (target: 12.50%)[0m
+2024-11-18 07:43:52,769 - INFO - 
+SUI:
+2024-11-18 07:43:52,769 - INFO -   Amount: 301.3600 tokens
+2024-11-18 07:43:52,769 - INFO -   Price: $3.8000
+2024-11-18 07:43:52,769 - INFO -   Value: $1,145.17
+2024-11-18 07:43:52,769 - INFO -   Portfolio %: [32m3.25% (target: 7.50%)[0m
+2024-11-18 07:43:52,769 - INFO - 
+CHAINLINK:
+2024-11-18 07:43:52,769 - INFO -   Amount: 31.1100 tokens
+2024-11-18 07:43:52,769 - INFO -   Price: $14.7400
+2024-11-18 07:43:52,769 - INFO -   Value: $458.56
+2024-11-18 07:43:52,769 - INFO -   Portfolio %: [32m1.30% (target: 2.50%)[0m
+2024-11-18 07:43:52,769 - INFO - 
+ARBITRUM:
+2024-11-18 07:43:52,769 - INFO -   Amount: 243.5500 tokens
+2024-11-18 07:43:52,769 - INFO -   Price: $0.7029
+2024-11-18 07:43:52,769 - INFO -   Value: $171.20
+2024-11-18 07:43:52,769 - INFO -   Portfolio %: [32m0.49% (target: 5.00%)[0m
+2024-11-18 07:43:52,769 - INFO - 
+SEI-NETWORK:
+2024-11-18 07:43:52,769 - INFO -   Amount: 43.6400 tokens
+2024-11-18 07:43:52,769 - INFO -   Price: $0.5242
+2024-11-18 07:43:52,770 - INFO -   Value: $22.88
+2024-11-18 07:43:52,770 - INFO -   Portfolio %: [32m0.06% (target: 2.50%)[0m
+2024-11-18 07:43:52,770 - INFO - 
+Final Recommendation:
+2024-11-18 07:43:52,770 - INFO - Buy ARBITRUM
+2024-11-18 07:43:52,770 - INFO - Amount: $100.00
+2024-11-18 07:43:52,770 - INFO - Current price: $0.7029
+2024-11-18 07:43:52,770 - INFO - Reasoning:
+2024-11-18 07:43:52,770 - INFO -   - 24h change: -0.7%
+2024-11-18 07:43:52,770 - INFO -   - 7d change: 12.8%
+2024-11-18 07:43:52,770 - INFO -   - Weighted change: 8.7%
+2024-11-18 07:43:52,770 - INFO -   - Allocation diff: 4.5%
+2024-11-18 07:43:52,770 - INFO -   - BTC dominance: 56.1%
+2024-11-18 07:43:52,770 - INFO - 
+=== CURRENT PORTFOLIO SUMMARY ===
+2024-11-18 07:43:52,770 - INFO - Total Portfolio Value: $35,218.49
+2024-11-18 07:43:52,770 - INFO - 
+Holdings Breakdown:
+2024-11-18 07:43:52,770 - INFO - BITCOIN:
+2024-11-18 07:43:52,770 - INFO -   Amount: 0.2282 tokens
+2024-11-18 07:43:52,770 - INFO -   Price per token: $91,260.0000
+2024-11-18 07:43:52,770 - INFO -   Total Value: $20,821.70
+2024-11-18 07:43:52,770 - INFO -   Portfolio %: [31m59.12% (target: 50.00%)[0m
+2024-11-18 07:43:52,771 - INFO - ETHEREUM:
+2024-11-18 07:43:52,771 - INFO -   Amount: 2.9683 tokens
+2024-11-18 07:43:52,771 - INFO -   Price per token: $3,144.7000
+2024-11-18 07:43:52,771 - INFO -   Total Value: $9,334.44
+2024-11-18 07:43:52,771 - INFO -   Portfolio %: [31m26.50% (target: 20.00%)[0m
+2024-11-18 07:43:52,771 - INFO - SOLANA:
+2024-11-18 07:43:52,771 - INFO -   Amount: 13.4432 tokens
+2024-11-18 07:43:52,771 - INFO -   Price per token: $242.8400
+2024-11-18 07:43:52,771 - INFO -   Total Value: $3,264.55
+2024-11-18 07:43:52,771 - INFO -   Portfolio %: [32m9.27% (target: 12.50%)[0m
+2024-11-18 07:43:52,771 - INFO - SUI:
+2024-11-18 07:43:52,771 - INFO -   Amount: 301.3600 tokens
+2024-11-18 07:43:52,771 - INFO -   Price per token: $3.8000
+2024-11-18 07:43:52,771 - INFO -   Total Value: $1,145.17
+2024-11-18 07:43:52,771 - INFO -   Portfolio %: [32m3.25% (target: 7.50%)[0m
+2024-11-18 07:43:52,771 - INFO - CHAINLINK:
+2024-11-18 07:43:52,771 - INFO -   Amount: 31.1100 tokens
+2024-11-18 07:43:52,771 - INFO -   Price per token: $14.7400
+2024-11-18 07:43:52,771 - INFO -   Total Value: $458.56
+2024-11-18 07:43:52,771 - INFO -   Portfolio %: [32m1.30% (target: 2.50%)[0m
+2024-11-18 07:43:52,771 - INFO - ARBITRUM:
+2024-11-18 07:43:52,771 - INFO -   Amount: 243.5500 tokens
+2024-11-18 07:43:52,771 - INFO -   Price per token: $0.7029
+2024-11-18 07:43:52,771 - INFO -   Total Value: $171.20
+2024-11-18 07:43:52,771 - INFO -   Portfolio %: [32m0.49% (target: 5.00%)[0m
+2024-11-18 07:43:52,771 - INFO - SEI-NETWORK:
+2024-11-18 07:43:52,772 - INFO -   Amount: 43.6400 tokens
+2024-11-18 07:43:52,772 - INFO -   Price per token: $0.5242
+2024-11-18 07:43:52,772 - INFO -   Total Value: $22.88
+2024-11-18 07:43:52,772 - INFO -   Portfolio %: [32m0.06% (target: 2.50%)[0m
+2024-11-18 07:43:52,772 - INFO - 
+=== TRADE RECOMMENDATION ===
+2024-11-18 07:43:52,772 - INFO - Buy arbitrum
+2024-11-18 07:43:52,772 - INFO - Amount: $100.00
+2024-11-18 07:43:52,772 - INFO - Current price: $0.7029
+2024-11-18 07:43:52,772 - INFO - 24h change: -0.7%
+2024-11-18 07:43:52,772 - INFO - 7d change: 12.8%
+2024-11-18 08:20:32,811 - INFO - Initialized DCA Trader with $100 daily budget
+2024-11-18 08:20:32,811 - INFO - Target allocations: {
+  "bitcoin": 0.5,
+  "ethereum": 0.2,
+  "solana": 0.125,
+  "sui": 0.075,
+  "arbitrum": 0.05,
+  "chainlink": 0.025,
+  "sei-network": 0.025
+}
+2024-11-18 08:20:34,103 - ERROR - Error fetching history for chainlink: 429 Client Error: Too Many Requests for url: https://api.coingecko.com/api/v3/coins/chainlink/market_chart?vs_currency=usd&days=7
+2024-11-18 08:20:34,129 - ERROR - Error fetching history for sei-network: 429 Client Error: Too Many Requests for url: https://api.coingecko.com/api/v3/coins/sei-network/market_chart?vs_currency=usd&days=7
+2024-11-18 08:21:53,261 - INFO - Initialized DCA Trader with $100 daily budget
+2024-11-18 08:21:53,261 - INFO - Target allocations: {
+  "bitcoin": 0.5,
+  "ethereum": 0.2,
+  "solana": 0.125,
+  "sui": 0.075,
+  "arbitrum": 0.05,
+  "chainlink": 0.025,
+  "sei-network": 0.025
+}
+2024-11-18 08:21:54,753 - WARNING - Rate limited. Waiting 1 seconds...
+2024-11-18 08:21:55,776 - WARNING - Rate limited. Waiting 2 seconds...
+2024-11-18 08:21:57,809 - WARNING - Rate limited. Waiting 4 seconds...
+2024-11-18 08:22:01,837 - WARNING - Rate limited. Waiting 8 seconds...
+2024-11-18 08:22:09,859 - WARNING - Rate limited. Waiting 16 seconds...
+2024-11-18 08:22:25,888 - WARNING - Rate limited. Waiting 1 seconds...
+2024-11-18 08:22:26,927 - WARNING - Rate limited. Waiting 2 seconds...
+2024-11-18 08:22:28,954 - WARNING - Rate limited. Waiting 4 seconds...
+2024-11-18 08:22:32,980 - WARNING - Rate limited. Waiting 8 seconds...
+2024-11-18 08:22:41,007 - WARNING - Rate limited. Waiting 16 seconds...
+2024-11-18 08:25:30,845 - INFO - Initialized DCA Trader with $100 daily budget
+2024-11-18 08:25:30,846 - INFO - Target allocations: {
+  "bitcoin": 0.5,
+  "ethereum": 0.2,
+  "solana": 0.125,
+  "sui": 0.075,
+  "arbitrum": 0.05,
+  "chainlink": 0.025,
+  "sei-network": 0.025
+}
+2024-11-18 08:25:31,667 - WARNING - Rate limited. Waiting 1 seconds...
+2024-11-18 08:25:32,738 - WARNING - Rate limited. Waiting 2 seconds...
+2024-11-18 08:25:34,796 - WARNING - Rate limited. Waiting 4 seconds...
+2024-11-18 08:25:38,848 - WARNING - Rate limited. Waiting 8 seconds...
+2024-11-18 08:25:46,965 - WARNING - Rate limited. Waiting 16 seconds...
+2024-11-18 08:26:03,011 - WARNING - Rate limited. Waiting 32 seconds...
+2024-11-18 08:26:35,404 - INFO - 
+==================================================
+2024-11-18 08:26:35,404 - INFO - Starting new trade analysis...
+2024-11-18 08:26:35,650 - INFO - 
+=== TRADE RECOMMENDATION ===
+2024-11-18 08:26:35,650 - INFO - Buy ARBITRUM
+2024-11-18 08:26:35,650 - INFO - Amount: $100.00
+2024-11-18 08:26:35,650 - INFO - Current price: $0.6999
+2024-11-18 08:26:35,651 - INFO - 24h change: -1.1%
+2024-11-18 08:26:35,651 - INFO - 7d change: 12.4%
+2024-11-18 08:30:18,210 - INFO - Initialized DCA Trader with $100 daily budget
+2024-11-18 08:30:18,211 - INFO - Target allocations: {
+  "bitcoin": 0.5,
+  "ethereum": 0.2,
+  "solana": 0.125,
+  "sui": 0.075,
+  "arbitrum": 0.05,
+  "chainlink": 0.025,
+  "sei-network": 0.025
+}
+2024-11-18 08:30:18,999 - WARNING - Rate limited. Waiting 1 seconds...
+2024-11-18 08:30:20,043 - WARNING - Rate limited. Waiting 2 seconds...
+2024-11-18 08:30:22,088 - WARNING - Rate limited. Waiting 4 seconds...
+2024-11-18 08:30:26,144 - WARNING - Rate limited. Waiting 8 seconds...
+2024-11-18 08:30:34,184 - WARNING - Rate limited. Waiting 10 seconds...
+2024-11-18 08:30:44,240 - WARNING - Rate limited. Waiting 10 seconds...
+2024-11-18 08:30:54,281 - WARNING - Rate limited. Waiting 10 seconds...
+2024-11-18 08:31:04,325 - WARNING - Rate limited. Waiting 10 seconds...
+2024-11-18 08:31:14,372 - WARNING - Rate limited. Waiting 10 seconds...
+2024-11-18 08:31:24,705 - INFO - 
+==================================================
+2024-11-18 08:31:24,706 - INFO - Starting new trade analysis...
+2024-11-18 08:37:24,144 - INFO - Initialized DCA Trader with $100 daily budget
+2024-11-18 08:37:24,145 - INFO - Target allocations: {
+  "bitcoin": 0.5,
+  "ethereum": 0.2,
+  "solana": 0.125,
+  "sui": 0.075,
+  "arbitrum": 0.05,
+  "chainlink": 0.025,
+  "sei-network": 0.025
+}
+2024-11-18 08:37:25,248 - WARNING - Rate limited. Waiting 1 seconds...
+2024-11-18 08:37:26,294 - WARNING - Rate limited. Waiting 2 seconds...
+2024-11-18 08:37:28,349 - WARNING - Rate limited. Waiting 4 seconds...
+2024-11-18 08:37:32,406 - WARNING - Rate limited. Waiting 8 seconds...
+2024-11-18 08:37:40,448 - WARNING - Rate limited. Waiting 10 seconds...
+2024-11-18 08:37:50,497 - WARNING - Rate limited. Waiting 10 seconds...
+2024-11-18 08:38:00,548 - WARNING - Rate limited. Waiting 10 seconds...
+2024-11-18 08:38:10,606 - WARNING - Rate limited. Waiting 10 seconds...
+2024-11-18 08:38:20,661 - WARNING - Rate limited. Waiting 10 seconds...
+2024-11-18 08:38:31,004 - INFO - 
+==================================================
+2024-11-18 08:38:31,005 - INFO - Starting new trade analysis...
+2024-11-18 08:38:31,564 - INFO - 
+=== TRADE RECOMMENDATION ===
+2024-11-18 08:38:31,565 - INFO - Buy ARBITRUM
+2024-11-18 08:38:31,565 - INFO - Amount: $100.00
+2024-11-18 08:38:31,565 - INFO - Current price: $0.6999
+2024-11-18 08:38:31,565 - INFO - 24h change: -1.1%
+2024-11-18 08:38:31,565 - INFO - 7d change: 12.4%
