@@ -99,17 +99,10 @@ class DCATrader:
         if not portfolio:
             return "Error: Could not analyze portfolio"
 
-        # Add target allocations to portfolio data for the table
         portfolio['target_allocations'] = self.allocations
 
-        # Print enhanced market overview table with portfolio data
-        self.price_fetcher.print_price_table(portfolio)
-
-        # Get remaining price data
         price_summary = self.price_fetcher.get_price_summary()
-        btc_dominance = self.coingecko.get_btc_dominance()
-
-        if not all([price_summary, btc_dominance]):
+        if not price_summary:
             return "Error: Could not fetch required data"
 
         # Calculate opportunities for each token
@@ -117,30 +110,47 @@ class DCATrader:
         for token in self.allocations.keys():
             target_allocation = self.allocations[token] * 100
             current_allocation = portfolio['holdings'][token]['percentage']
-            allocation_difference = target_allocation - current_allocation
+            allocation_diff_pct = target_allocation - current_allocation
+            print()
 
-            weighted_change = (
-                0.7 * price_summary[token][TimeFrame.DAYS_7] +
-                0.3 * price_summary[token][TimeFrame.HOURS_24]
+            # Weight composition:
+            # - 50% 7-day performance
+            # - 25% 24h performance
+            # - 25% allocation difference
+            score = (
+                0.50 * price_summary[token][TimeFrame.DAYS_7] +    # 7d performance (50%)
+                0.25 * price_summary[token][TimeFrame.HOURS_24] +  # 24h performance (25%)
+                0.25 * allocation_diff_pct                         # allocation diff (25%)
             )
 
-            score = weighted_change - (allocation_difference * 2)
 
             opportunities[token] = {
-                'weighted_change': weighted_change,
                 'price': price_summary[token][TimeFrame.CURRENT],
                 'changes': {
                     '24h': price_summary[token][TimeFrame.HOURS_24],
                     '7d': price_summary[token][TimeFrame.DAYS_7]
                 },
-                'allocation_difference': allocation_difference,
+                'allocation_diff_pct': allocation_diff_pct,
                 'score': score
             }
 
-        # Find best opportunity
-        best_token = min(opportunities.items(), key=lambda x: x[1]['score'])[0]
-        if opportunities[best_token]['allocation_difference'] <= 0:
+        # Add scores to portfolio data for table display
+        portfolio['scores'] = {token: data['score'] for token, data in opportunities.items()}
+
+        # Now print the table with scores included
+        self.price_fetcher.print_price_table(portfolio)
+
+        # Filter out over-allocated tokens
+        under_allocated = {
+            token: data for token, data in opportunities.items()
+            if data['allocation_diff_pct'] > 0
+        }
+
+        if not under_allocated:
             return None
+
+        # Find best opportunity among under-allocated tokens
+        best_token = min(under_allocated.items(), key=lambda x: x[1]['score'])[0]
 
         return {
             'token': best_token,
@@ -149,9 +159,8 @@ class DCATrader:
                 'price': opportunities[best_token]['price'],
                 '24h_change': opportunities[best_token]['changes']['24h'],
                 '7d_change': opportunities[best_token]['changes']['7d'],
-                'weighted_change': opportunities[best_token]['weighted_change'],
-                'allocation_difference': opportunities[best_token]['allocation_difference'],
-                'btc_dominance': btc_dominance
+                'score': opportunities[best_token]['score'],
+                'allocation_difference': opportunities[best_token]['allocation_diff_pct'],
             },
             'portfolio': portfolio
         }

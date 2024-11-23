@@ -37,28 +37,6 @@ class CoinGeckoAPI:
 
         return None
 
-    def get_current_prices(self, tokens: list[str]) -> Dict[str, float]:
-        """Get current prices for multiple tokens"""
-        try:
-            response = self._make_request_with_backoff(
-                f"{self.BASE_URL}/simple/price",
-                params={
-                    'ids': ','.join(tokens),
-                    'vs_currencies': 'usd'
-                }
-            )
-
-            if response:
-                return {
-                    token: data['usd']
-                    for token, data in response.json().items()
-                }
-            return {}
-
-        except Exception as e:
-            logging.error(f"Error fetching prices: {e}")
-            return {}
-
     def get_price_history(self, token: str, days: int = 7) -> Optional[pd.DataFrame]:
         """Get historical price data for a token"""
         try:
@@ -82,20 +60,4 @@ class CoinGeckoAPI:
 
         except Exception as e:
             logging.error(f"Error fetching history for {token}: {e}")
-            return None
-
-    def get_btc_dominance(self) -> Optional[float]:
-        """Get current Bitcoin dominance percentage"""
-        try:
-            response = self._make_request_with_backoff(
-                f"{self.BASE_URL}/global"
-            )
-
-            if not response:
-                return None
-
-            return response.json()['data']['market_cap_percentage']['btc']
-
-        except Exception as e:
-            logging.error(f"Error fetching BTC dominance: {e}")
             return None

@@ -55,7 +55,7 @@ class PriceFetcher:
         summary = self.get_price_summary()
 
         table_data = []
-        headers = ["Token", "Price", "24h Change", "7d Change", "Holdings", "Value USD", "Current %", "Target %", "Diff"]
+        headers = ["Token", "Price", "24h Change", "7d Change", "Holdings", "Value USD", "Current %", "Target %", "Diff", "Score"]
 
         for token, prices in summary.items():
             row = [
@@ -75,15 +75,21 @@ class PriceFetcher:
                 diff_color = "\033[32m" if diff < 0 else "\033[31m"  # Green if under, red if over
                 diff_str = f"{diff_color}{diff:+.1f}%\033[0m"
 
+                # Add score with color (lower is better)
+                score = portfolio_data['scores'][token]
+                score_color = "\033[32m" if score < 0 else "\033[31m"
+                score_str = f"{score_color}{score:+.2f}\033[0m"
+
                 row.extend([
                     f"{holding['amount']:.4f}",
                     f"${holding['value_usd']:,.2f}",
                     f"{current_pct:.1f}%",
                     f"{target_pct:.1f}%",
-                    diff_str
+                    diff_str,
+                    score_str
                 ])
             else:
-                row.extend(["-", "-", "-", "-", "-"])
+                row.extend(["-", "-", "-", "-", "-", "-"])
 
             table_data.append(row)
 
