@@ -46,12 +46,17 @@ class DCATrader:
         # Load settings
         self.daily_budget = config['settings']['daily_budget']
         self.min_trade_size = config['settings']['min_trade_size']
+        self.currency = config['settings'].get('currency', 'USD').upper()
+        self.currency_symbol = 'kr' if self.currency == 'NOK' else '$'
 
         # Initialize APIs and price fetcher
-        self.coingecko = CoinGeckoAPI()
-        self.price_fetcher = PriceFetcher(list(self.allocations.keys()))
+        self.coingecko = CoinGeckoAPI(currency=self.currency.lower())
+        self.price_fetcher = PriceFetcher(
+            tokens=list(self.allocations.keys()),
+            currency=self.currency.lower()
+        )
 
-        logging.info(f"Initialized DCA Trader with ${self.daily_budget} daily budget")
+        logging.info(f"Initialized DCA Trader with {self.currency_symbol}{self.daily_budget} daily budget")
         logging.info(f"Target allocations: {json.dumps(self.allocations, indent=2)}")
 
     def analyze_portfolio(self):

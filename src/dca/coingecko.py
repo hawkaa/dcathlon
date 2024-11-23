@@ -4,11 +4,13 @@ import logging
 import time
 import pandas as pd
 
+
 class CoinGeckoAPI:
     BASE_URL = "https://api.coingecko.com/api/v3"
 
-    def __init__(self):
+    def __init__(self, currency: str = "usd"):
         self.session = requests.Session()
+        self.currency = currency.lower()
 
     def _make_request_with_backoff(self, url: str, params: dict = None, max_retries: int = 10, max_wait: int = 10):
         """Make API request with exponential backoff retry mechanism"""
@@ -43,7 +45,7 @@ class CoinGeckoAPI:
             response = self._make_request_with_backoff(
                 f"{self.BASE_URL}/coins/{token}/market_chart",
                 params={
-                    'vs_currency': 'usd',
+                    'vs_currency': self.currency,
                     'days': str(days),
                 }
             )

@@ -13,11 +13,13 @@ class TimeFrame(Enum):
     DAYS_7 = "7d"
 
 class PriceFetcher:
-    def __init__(self, tokens: list[str]):
+    def __init__(self, tokens: list[str], currency: str = "usd"):
         self.tokens = tokens
+        self.currency = currency.lower()
+        self.currency_symbol = 'kr' if currency.upper() == 'NOK' else '$'
         self.price_cache: Dict[str, float] = {}
         self.history_cache: Dict[str, pd.DataFrame] = {}
-        self.api = CoinGeckoAPI()
+        self.api = CoinGeckoAPI(currency=self.currency)
 
     def get_price_summary(self) -> Dict[str, Dict[TimeFrame, float]]:
         """Get summary of prices and changes for all tokens"""
@@ -55,12 +57,14 @@ class PriceFetcher:
         summary = self.get_price_summary()
 
         table_data = []
-        headers = ["Token", "Price", "24h Change", "7d Change", "Holdings", "Value USD", "Current %", "Target %", "Diff", "Score"]
+        headers = ["Token", f"Price ({self.currency.upper()})", "24h Change", "7d Change",
+                  "Holdings", f"Value {self.currency.upper()}", "Current %", "Target %",
+                  "Diff", "Score"]
 
         for token, prices in summary.items():
             row = [
                 token.upper(),
-                f"${prices[TimeFrame.CURRENT]:,.2f}",
+                f"{self.currency_symbol}{prices[TimeFrame.CURRENT]:,.2f}",
                 f"{prices[TimeFrame.HOURS_24]:+.2f}%",
                 f"{prices[TimeFrame.DAYS_7]:+.2f}%",
             ]
@@ -82,7 +86,7 @@ class PriceFetcher:
 
                 row.extend([
                     f"{holding['amount']:.4f}",
-                    f"${holding['value_usd']:,.2f}",
+                    f"{self.currency_symbol}{holding['value_usd']:,.2f}",
                     f"{current_pct:.1f}%",
                     f"{target_pct:.1f}%",
                     diff_str,
@@ -95,5 +99,5 @@ class PriceFetcher:
 
         print("\nPortfolio and Market Overview:")
         if portfolio_data:
-            print(f"Total Portfolio Value: ${portfolio_data['total_value']:,.2f}")
+            print(f"Total Portfolio Value: {self.currency_symbol}{portfolio_data['total_value']:,.2f}")
         print(tabulate(table_data, headers=headers, tablefmt="grid"))
